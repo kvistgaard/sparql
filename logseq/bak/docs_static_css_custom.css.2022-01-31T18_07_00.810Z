@@ -1,4 +1,3 @@
-*/
 #head .ui__dropdown-trigger,
 
 
@@ -9,4 +8,3 @@
 #right-sidebar .cp__right-sidebar-settings div:last-child {
     display: none;
 }
-/*

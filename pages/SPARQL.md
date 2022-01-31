@@ -15,9 +15,10 @@
   id:: 61ef8d42-1ee1-414c-94c7-95bf57b64808
 	- [SPARQL in 11 minutes (video)](https://www.youtube.com/watch?v=FvGndkpa4K0)
 	- [SPARQL video lectures from open HPI](https://open.hpi.de/courses/semanticweb2016/items/4HiNFQlE5zfD5nsU4MGArW)
+	- [SPARQL Tutorial by data.world](https://docs.data.world/tutorials/sparql/) #[[data.world]]
 	- [SPARQL Tutorial at Apache Jena](https://jena.apache.org/tutorials/sparql.html)
 	- [Wikidata SPARQL tutorial](https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial) #Wikidata
-	- [Wikidata SPARQL tutorial] (new, by Wikimedia Israel) #Wikidata
+	- [Wikidata SPARQL tutorial](https://wdqs-tutorial.toolforge.org/) (new) #Wikidata
 	- [Querying Wikidata: SELECT vs CONSTRUCT](https://markhneedham.com/blog/2020/02/02/querying-wikidata-construct-select/) #Wikidata
 	- [Learn SPARQL - Tutorial | Stardog](https://www.stardog.com/tutorials/sparql/)  #Stardog
 	- [Constructing More Advanced SPARQL Queries | by Angus Addlesee | Wallscope | Medium](https://medium.com/wallscope/constructing-more-advanced-sparql-queries-72d5ade1eedc)

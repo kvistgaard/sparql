@@ -1,23 +1,12 @@
-/* hidden useless elements 
-.origin-top-right .menu-link:nth-child(1),
-.origin-top-right .menu-link:nth-child(3),
-.origin-top-right .menu-link:nth-child(6),
-.origin-top-right .menu-link:nth-child(8) {
-    display: none;
-}
-.origin-top-right hr {
-    display: none;
-}
-
-
-#head .ui__dropdown-trigger,
 */
+#head .ui__dropdown-trigger,
+
 
 #left-sidebar .flashcards-nav,
 #left-sidebar .all-pages-nav,
-#head .ui__dropdown-trigger,
 #left-sidebar .favorites,
 #left-sidebar .recent,
 #right-sidebar .cp__right-sidebar-settings div:last-child {
     display: none;
 }
+/*

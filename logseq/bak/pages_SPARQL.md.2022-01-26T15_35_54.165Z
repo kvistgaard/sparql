@@ -1,0 +1,26 @@
+- SPARQL Protocol and [[RDF]] Query Language
+- W3C [[Specification]]s[*](((61e6a022-75b3-4590-b792-352133b149ed)))
+	- [SPARQL 1.1 Overview](http://www.w3.org/TR/2013/REC-sparql11-overview-20130321) (this document)
+	- [SPARQL 1.1 Query Language](http://www.w3.org/TR/2013/REC-sparql11-query-20130321) (the main specification)
+	- [SPARQL 1.1 Update](http://www.w3.org/TR/2013/REC-sparql11-update-20130321)
+	- [SPARQL1.1 Service Description](http://www.w3.org/TR/2013/REC-sparql11-service-description-20130321)
+	- [SPARQL 1.1 Federated Query](http://www.w3.org/TR/2013/REC-sparql11-federated-query-20130321)
+	- [SPARQL 1.1 Query Results JSON Format](http://www.w3.org/TR/2013/REC-sparql11-results-json-20130321)
+	- [SPARQL 1.1 Query Results CSV and TSV Formats](http://www.w3.org/TR/2013/REC-sparql11-results-csv-tsv-20130321)
+	- [SPARQL Query Results XML Format (Second Edition)](http://www.w3.org/TR/2013/REC-rdf-sparql-XMLres-20130321)
+	- [SPARQL 1.1 Entailment Regimes](http://www.w3.org/TR/2013/REC-sparql11-entailment-20130321)
+	- [SPARQL 1.1 Protocol](http://www.w3.org/TR/2013/REC-sparql11-protocol-20130321)
+	- [SPARQL 1.1 Graph Store HTTP Protocol](http://www.w3.org/TR/2013/REC-sparql11-http-rdf-update-20130321)
+- [[Tutorial]]s
+	- [SPARQL in 11 minutes (video)](https://www.youtube.com/watch?v=FvGndkpa4K0)
+	- [SPARQL video lectures from open HPI](https://open.hpi.de/courses/semanticweb2016/items/4HiNFQlE5zfD5nsU4MGArW)
+	- [SPARQL Tutorial at Apache Jena](https://jena.apache.org/tutorials/sparql.html)
+	- [Wikidata SPARQL tutorial](https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial) #Wikidata
+	- [Wikidata SPARQL tutorial] (new, by Wikimedia Israel) #Wikidata
+	- [Querying Wikidata: SELECT vs CONSTRUCT](https://markhneedham.com/blog/2020/02/02/querying-wikidata-construct-select/) #Wikidata
+	- [Learn SPARQL - Tutorial | Stardog](https://www.stardog.com/tutorials/sparql/)  #Stardog
+	- [Constructing More Advanced SPARQL Queries | by Angus Addlesee | Wallscope | Medium](https://medium.com/wallscope/constructing-more-advanced-sparql-queries-72d5ade1eedc)
+- ---
+- [[Note]]s
+	- Officially they are called "recommendations"
+	  id:: 61e6a022-75b3-4590-b792-352133b149ed

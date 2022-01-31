@@ -1,0 +1,13 @@
+- [RDF 1.1 Concepts and Abstract Syntax](https://www.w3.org/TR/rdf11-concepts/)
+- RDF triple
+	- Subject
+		- URI
+	- Predicate
+		- URI
+	- Object
+		- URI
+		- Literal (one or two components)
+			- plain literal:
+				- lexical form + language tag
+			- typed literal
+				- lexical form + datatype URI

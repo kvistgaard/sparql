@@ -1,0 +1,8 @@
+-
+- Turtle compared to SPARQL [(go to spec)](https://www.w3.org/TR/2014/REC-turtle-20140225/#sec-diff-sparql)
+	- The SPARQL 1.1 Query LanguageF (SPARQL) uses a Turtle style syntax for its TriplesBlock production. This production differs from the Turtle language in that:
+		- SPARQL permits RDF Literals as the subject of RDF triples.
+		- SPARQL permits variables (`?name` or `$name`) in any part of the triple of the form.
+		- Turtle allows prefix and base declarations anywhere outside of a triple. In SPARQL, they are only allowed in the Prologue (at the start of the SPARQL query).
+		- SPARQL uses case insensitive keywords, except for 'a'. Turtle's @prefix and @base declarations are case sensitive, the SPARQL dervied PREFIX and BASE are case insensitive.
+		- 'true' and 'false' are case insensitive in SPARQL and case sensitive in Turtle. TrUe is not a valid boolean value in Turtle.

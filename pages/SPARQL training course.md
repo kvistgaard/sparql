@@ -1,0 +1,67 @@
+- All important points from the training course, collected for quick reference. See also [[Tutorials]].
+- ### SPARQL Interactions
+	- ![SPARQLinteractions.svg](../assets/SPARQLinteractions_1643113721643_0.svg)
+- ### Two triple patterns, same subject
+	- ```sparql
+	  SELECT ?country ?capital ?population 
+	  
+	  WHERE {
+	  ?country dbo:capital ?capital .
+	  ?country dbp:populationTotal ?population .
+	  } 
+	  ```
+	  #Query #DBpedia
+	- ![TwoPatternsSameSubject.svg](../assets/TwoPatternsSameSubject_1643114435930_0.svg){:height 279, :width 522}
+- ### Making another step in the graph
+	- ```sparql
+	  SELECT ?country ?population ?capital 
+	  
+	  WHERE {
+	  ?country a dbo:Country .
+	  ?country dbp:populationTotal ?population . 
+	  ?country dbo:capital ?capital_URI .
+	                       ?capital_URI   rdfs:label ?capital .
+	  }
+	  ```
+	  #Query #DBpedia
+	- ![AnotherStepInTheGraph.svg](../assets/AnotherStepInTheGraph_1643114924911_0.svg){:height 373, :width 646}
+	- ```sparql
+	  PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+	  PREFIX skosxl: <http://www.w3.org/2008/05/skos-xl#>
+	  
+	  SELECT * 
+	  
+	  WHERE {
+	      
+	      ?s skosxl:prefLabel ?Label_URI .
+	      ?Label_URI skosxl:literalForm ?label .
+	  
+	      FILTER (LANG(?label) = "es")
+	  } 
+	  ```
+		- #VocBench
+- ### Three patterns and two filters
+	- ```sparql
+	  SELECT ?country ?population ?capital 
+	  
+	  WHERE {
+	  ?country a dbo:Country; 
+	              dbo:populationTotal ?population; 
+	              dbo:capital ?capital_URI .
+	  ?capital_URI rdfs:label ?capital .
+	  
+	  FILTER ( LANG(?capital) = "en" )
+	  FILTER ( xsd:int(?population) > 10000000 )
+	  } 
+	  
+	  ORDER BY DESC(?population)
+	  ```
+	  #Query #DBpedia #FILTER #LANG
+- ### Negation
+	- `NOT EXISTS` - Testing for absence of a pattern (recommended in most cases)
+	- `MINUS`      -  Removing possible solutions
+	- `!BOUND`     -  Not bound (produces the same results as `NOT EXISTS` but works also for SPARQL 1.0)
+	- #+BEGIN_IMPORTANT
+	  `NOT EXISTS` and `MINUS` have different logic and may produce different results on the same dataset.
+	  #+END_IMPORTANT
+	-

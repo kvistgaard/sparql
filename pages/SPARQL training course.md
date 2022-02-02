@@ -39,7 +39,7 @@
 	      FILTER (LANG(?label) = "es")
 	  } 
 	  ```
-		- #VocBench
+		- #VocBench #Query
 - ### Three patterns and two filters
 	- ```sparql
 	  SELECT ?country ?population ?capital 

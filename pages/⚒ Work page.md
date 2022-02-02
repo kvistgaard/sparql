@@ -1,10 +1,17 @@
 public:: false
 
-- DONE CSS - hide elements
-	- TODO Remove also favorites form left sidebar
-- TODO Write home page
-- TODO Write tips and tricks by adapting EP Nodebook (why nodebook)
-- TODO Remove Favorites page and other useless elements: for example Settings, Import, Join the community, Help etc. are still published
+- TODO Add shortcuts to How to use this graph
+- TODO Replace the favicon
+- If the repository gets public
+	- TODO Restructure so that GitHub readme is outside Logseq folder
+- If it's decided for a wide promotion
+	- TODO Add explanations pertinent to VocBench and other OP-specific elements which wouldn't normally be present in a general SPARQL tutorial.
+- [[DONE]]
+	- DONE CSS - hide elements
+		- DONE Remove also favorites form left sidebar
+	- DONE Write home page
+	- DONE Write tips and tricks by adapting EP Nodebook (why nodebook)
+	- DONE Remove Favorites page and other useless elements: for example Settings, Import, Join the community, Help etc. are still published
 - ---
 - Publication checklist
 	- Remove favorites if kept

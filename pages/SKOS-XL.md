@@ -71,4 +71,4 @@
 	  }
 	  ORDER BY  ?dProperty ?oProperty ?aProperty
 	  ```
-		- #VALUES #UNION #STRSTARTS
+		- #VALUES #UNION #STRSTARTS #Query

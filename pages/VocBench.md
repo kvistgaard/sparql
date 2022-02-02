@@ -1,4 +1,24 @@
 - [VocBench: SPARQL](http://vocbench.uniroma2.it/doc/user/sparql.jsf) #Documentation
+- Queries can be stored in VocBencjaccording to the following patterns:
+	- USER – specific for the user, on all projects)
+	- PROJECT – specific for the project, on all users of that project
+	- PROJECT_USER –  specific to the user and only for that project
+	- SYSTEM – visible to all users on all projects
+- Query several projects at once
+	- [[Example]]
+		- ```sparql
+		  SELECT * WHERE {
+		      ?localConcept a skos:Concept .
+		      SERVICE <repository:OP_TRAINING_country_core> {
+		          ?countryConcept a skos:Concept .
+		      }
+		  }
+		  ```
+		  #[[Federated Query]] #OP
+	- In this example the query is executed in a project different than OP_TRAINING and combines results from both
+	- #+BEGIN_NOTE
+	  The repository name might depend on the installation. In the VocBench installation of the [[Publications Office]], the repository name is the project name appended with `_core`
+	  #+END_NOTE
 - [[PREFIXES]]
 	- ```turtle
 	  PREFIX adms: <http://www.w3.org/ns/adms#>

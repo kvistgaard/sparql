@@ -1,5 +1,5 @@
 - A keyword for providing inline data, a list of values inside `{ }`
-- [[Example]] [[Query]] #Wikidata
+- [[Example]]
   id:: 61e6cd78-f627-493f-ae7c-04ccf880ad1a
 	- ```sparql
 	  #get the list of notable books on linked data, semantic technologies, and semantic knowledge graphs. (issue: langauge of wdt:P2093)
@@ -17,6 +17,7 @@
 	  }
 	  GROUP BY ?book ?title ?pubDate
 	  ```
+	  #Wikidata #Query
 - Allows multiple variables
 - [[Syntax]]
 	- ```sparql

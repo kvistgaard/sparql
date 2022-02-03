@@ -57,6 +57,23 @@
 	  ORDER BY DESC(?population)
 	  ```
 	  #Query #DBpedia #FILTER #LANG
+- ### Functions on dates and times
+	- [[NOW]]()
+	- [[YEAR]]()
+	- [[MONTH]]()
+	- [[DAY]]()
+	- [[HOURS]]()
+	- [[MINUTES]]()
+	- [[SECONDS]]()
+	- [[Example]]
+		- ```sparql
+		  :LOGBOOK:
+		  CLOCK: [2022-02-03 Thu 12:55:49]
+		  :END:
+		  SELECT (MONTH(NOW()) AS ?currentMonth) { }
+		  
+		  ```
+		  #Query #NOW #MONTH
 - ### Negation
 	- `NOT EXISTS` - Testing for absence of a pattern (recommended in most cases)
 	- `MINUS`      -  Removing possible solutions

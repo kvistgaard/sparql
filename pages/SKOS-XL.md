@@ -1,4 +1,6 @@
-- ![image.png](../assets/SKOS-XLdiagram.png){:height 593, :width 727}
+- type:: [[Ontology]]
+- [[Class Diagram]]
+	- ![image.png](../assets/SKOS-XLdiagram.png){:height 628, :width 746}
 - ## Classes
 	- skos:Collection
 	- skos:Concept

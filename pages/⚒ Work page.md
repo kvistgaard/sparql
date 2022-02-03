@@ -1,11 +1,13 @@
 public:: false
 
-- TODO Add shortcuts to How to use this graph
+- TODO Get SPARQL endpoints by query
 - TODO Replace the favicon
-- If the repository gets public
-	- TODO Restructure so that GitHub readme is outside Logseq folder
-- If it's decided for a wide promotion
-	- TODO Add explanations pertinent to VocBench and other OP-specific elements which wouldn't normally be present in a general SPARQL tutorial.
+- TODO Add shortcuts to How to use this graph
+- ## Conditional
+	- If the repository gets public
+		- TODO Restructure so that GitHub readme is outside Logseq folder
+	- If it's decided for a wide promotion
+		- TODO Add explanations pertinent to VocBench and other OP-specific elements which wouldn't normally be present in a general SPARQL tutorial.
 - [[DONE]]
 	- DONE CSS - hide elements
 		- DONE Remove also favorites form left sidebar

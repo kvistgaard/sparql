@@ -92,7 +92,7 @@
  ;;  :editor/down            ["ctrl+j" "down"]
  ;;  :editor/left            ["ctrl+h" "left"]
  ;;  :editor/right           ["ctrl+l" "right"]}
- :shortcuts {:editor/insert-link "ctrl+k", :go/search "alt+x", :go/search-in-page "shift+alt+x"}
+ :shortcuts {:editor/insert-link "ctrl+k", :go/search "alt+x", :go/search-in-page "shift+alt+x", :editor/move-block-up "shift+ctrl+up", :editor/move-block-down "shift+ctrl+down"}
 
  ;; By default, pressing `Enter` in the document mode will create a new line.
  ;; Set this to `true` so that it's the same behaviour as the usual outliner mode.
@@ -169,7 +169,7 @@
  :default-home {:page "SPARQL Knowledge Graph"}
  :ui/show-brackets? false
  :publishing/all-pages-public? true
- :favorites ["⚒ Work page"]
+ :favorites ["Template" "⚒ Work page"]
 
  ;; any number between 0 and 1 (the greater it is the faster the changes of the next-interval of card reviews) (default 0.5)
  ;; :srs/learning-fraction 0.5

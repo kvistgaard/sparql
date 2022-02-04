@@ -67,13 +67,10 @@
 	- [[SECONDS]]()
 	- [[Example]]
 		- ```sparql
-		  :LOGBOOK:
-		  CLOCK: [2022-02-03 Thu 12:55:49]
-		  :END:
 		  SELECT (MONTH(NOW()) AS ?currentMonth) { }
 		  
 		  ```
-		  #Query #NOW #MONTH
+		  #Query
 - ### Negation
 	- `NOT EXISTS` - Testing for absence of a pattern (recommended in most cases)
 	- `MINUS`      -  Removing possible solutions

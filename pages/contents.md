@@ -2,4 +2,4 @@
 - [[SPARQL training course]]
 - [[SPARQL Endpoints]]
 - [[SPARQL Syntax]]
-- [[Tutorials]]
+- [[Tutorial]]

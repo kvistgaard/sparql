@@ -11,7 +11,7 @@
 	- [SPARQL 1.1 Entailment Regimes](http://www.w3.org/TR/2013/REC-sparql11-entailment-20130321)
 	- [SPARQL 1.1 Protocol](http://www.w3.org/TR/2013/REC-sparql11-protocol-20130321)
 	- [SPARQL 1.1 Graph Store HTTP Protocol](http://www.w3.org/TR/2013/REC-sparql11-http-rdf-update-20130321)
-- [[Tutorials]]
+- [[Tutorial]]s
   id:: 61ef8d42-1ee1-414c-94c7-95bf57b64808
 	- [SPARQL in 11 minutes (video)](https://www.youtube.com/watch?v=FvGndkpa4K0)
 	- [SPARQL video lectures from open HPI](https://open.hpi.de/courses/semanticweb2016/items/4HiNFQlE5zfD5nsU4MGArW)

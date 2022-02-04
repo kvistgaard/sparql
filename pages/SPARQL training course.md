@@ -1,4 +1,4 @@
-- All important points from the training course, collected for quick reference. See also [[Tutorials]].
+- All important points from the training course, collected for quick reference. See also [[Tutorial]].
 - ### SPARQL Interactions
 	- ![SPARQLinteractions.svg](../assets/SPARQLinteractions_1643113721643_0.svg)
 - ### Two triple patterns, same subject
@@ -57,6 +57,13 @@
 	  ORDER BY DESC(?population)
 	  ```
 	  #Query #DBpedia #FILTER #LANG
+- ### Counting and Binding
+	- ```sparql
+	  SELECT (COUNT (?work_of_Agatha_Christie) AS ?Number_of_AC_works)
+	  
+	  {?work_of_Agatha_Christie dbo:author dbr:Agatha_Christie } 
+	  ```
+	  #Query #COUNT
 - ### Functions on dates and times
 	- [[NOW]]()
 	- [[YEAR]]()
@@ -78,4 +85,72 @@
 	- #+BEGIN_IMPORTANT
 	  `NOT EXISTS` and `MINUS` have different logic and may produce different results on the same dataset.
 	  #+END_IMPORTANT
-	-
+	- ```sparql
+	  SELECT DISTINCT ?leader 
+	  
+	  WHERE { 
+	    ?MS a dbo:Country; 
+	      dct:subject dbc:Member_states_of_the_European_Union;
+	      dbp:leaderName ?leader . 
+	    FILTER NOT EXISTS {?leader dbo:spouse ?spouse .}
+	  }
+	  
+	  ORDER BY DESC(?leader)
+	  
+	  ```
+	  #Query #FILTER #[[NOT EXISTS]]
+- ### Optional results
+	- ```sparql
+	  SELECT DISTINCT ?leader ?spouse
+	  
+	  WHERE { 
+	    ?MS a dbo:Country; 
+	      dct:subject dbc:Member_states_of_the_European_Union;
+	      dbp:leaderName ?leader . 
+	    OPTIONAL {?leader dbo:spouse ?spouse .}
+	  }
+	  
+	  ```
+	  #Query #OPTIONAL
+- ### Combining results
+	- ```sparql
+	  SELECT DISTINCT  ?Influencer ?Influenced
+	  
+	  WHERE {
+	  
+	   {dbr:Ludwig_Wittgenstein dbo:influencedBy ?Influencer .}
+	  
+	  UNION
+	  
+	   {dbr:Ludwig_Wittgenstein dbo:influenced ?Influenced . }
+	  }
+	  
+	  ```
+	  #Query #UNION
+	- #+BEGIN_NOTE
+	  This query will not give complete results, unless inferred triples on inverse properties are included. To guarantee complete results relying only on SPARQL, the inverse property should be included. See ((61fd57ec-536d-4dbf-ae91-8f67c84f4daf)).
+	  #+END_NOTE
+- ### Search for string patterns
+  id:: 61fd3a3d-81b5-448d-a76f-d1b0008b7476
+	- ```sparql
+	  SELECT DISTINCT ?MusicalWork ?Artist
+	  
+	  WHERE {
+	  ?MusicalWorkURI a dbo:MusicalWork ;
+	                 rdfs:label ?MusicalWork ;
+	                 dbo:artist ?ArtistURI .
+	  
+	  ?ArtistURI rdfs:label ?Artist .
+	  
+	  FILTER (lang(?MusicalWork) = "en")
+	  FILTER (lang(?Artist) = "en")
+	  FILTER REGEX (?MusicalWork, "broken", "i")
+	  }
+	  ORDER BY ?MusicalWork
+	  ```
+	  #Query #REGEX #FILTER #LANG
+- ### Assembling strings
+	- ![ComingSoon.svg](../assets/ComingSoon_1643993150465_0.svg)
+- ### Property paths
+  id:: 61fd57ec-536d-4dbf-ae91-8f67c84f4daf
+	- ![ComingSoon.svg](../assets/ComingSoon_1643993150465_0.svg)

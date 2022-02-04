@@ -19,7 +19,7 @@
 - ## Brackets
 	- Curly **{ }** (aka “braces”)
 		- Query conditions: triple patterns, filters, bindings, etc
-		  `{?x a foaf:Person}
+		  `{?x a foaf:Person}`
 	- Round **( )** (aka “parentheses”)
 		- Mostly for function arguments
 		  `FILTER ( LANG(?capital) = "en" )`

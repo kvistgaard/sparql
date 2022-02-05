@@ -2,12 +2,12 @@
 	- This is an example of a node represented as page: [[SPARQL training course]].
 	- Tags are the same kind of nodes, just look differently. Example: #Wikidata.
 	  id:: dc9da725-9e9e-48b1-a1eb-00623227e4b5
-	- Apart from pages, blocks are also nodes that can be linked to other nodes and can be nested. This is how a reference to the block above looks: ((dc9da725-9e9e-48b1-a1eb-00623227e4b5)) The same can be represented by [alias](((dc9da725-9e9e-48b1-a1eb-00623227e4b5))).
-	- These are all clickable internal resources. External hyperlinks look like this: [Publications Office of the European Union - Wikidata](https://www.wikidata.org/wiki/Q480222)
-- When you hover over a page or block reference, you can see a preview. If there are links, you click directly on them without going to that page or paragraph. Try with [[SPARQL]] for page and with [this note](((61ef8d42-f778-4f31-95f3-1b76bd13f743))) for paragraph.
-- If a page is mentioned on another page, you can see that linked page and the reference context at the bottom section _Linked References_. References and be filtered when they are more than one by clicking on the filter icon on the right and selecting one or more entities. Try with [[Syntax]] .
+	- Apart from pages, paragraphs (here called "blocks") are also nodes that can be linked to other nodes and can be nested. This is how a reference to the block above looks: ((dc9da725-9e9e-48b1-a1eb-00623227e4b5)) The same can be represented by [alias](((dc9da725-9e9e-48b1-a1eb-00623227e4b5))).
+	- These are all clickable internal resources. External hyperlinks looks like this: [Publications Office of the European Union - Wikidata](https://www.wikidata.org/wiki/Q480222)
+- When you hover over a page or paragraph (block) reference, you can see a preview. If there are links, you click directly on them without going to that page or paragraph. Try with [[SPARQL]] for page and with [this note](((61ef8d42-f778-4f31-95f3-1b76bd13f743))) for paragraph.
+- If a page is mentioned on another page, you can see that linked page and the context at the bottom section _Linked References_, which you can also filter when they are more than one. Try with [[Syntax]] .
   #+BEGIN_TIP
-  In order to stay on the current page, if you click on an internal link holding Shift, it will open on the right sidebar.
+  In order to stay on the current page, if you may click on an internal link holding Shift, and it will open on the right-side bar.
   #+END_TIP
 - То explore visually the graph of all pages, click Graph on top right. You can interact with the graph. The block nodes are not shown but when searching (click on the magnifier icon on top left or press `alt+x`) you get both block and page results indicated with B and P respectively.
 - #+BEGIN_TIP

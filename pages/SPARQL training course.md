@@ -1,4 +1,4 @@
-- All important points from the training course, collected for quick reference. See also [[Tutorial]].
+- All important points from the training course, collected for quick reference. See also [[Tutorial]]s.
 - ### SPARQL Interactions
 	- ![SPARQLinteractions.svg](../assets/SPARQLinteractions_1643113721643_0.svg)
 - ### Two triple patterns, same subject

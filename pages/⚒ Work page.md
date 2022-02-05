@@ -5,6 +5,8 @@ public:: false
 - TODO Add shortcuts to How to use this graph
 - TODO Fix issues with ((5601edec-7d0a-4be1-b12c-8357da7b0b94)) images
 	- open on the sidebar
+- TODO Consider showing 'All Pages'
+- {{embed [[BACKLOG]]}}
 - ## Conditional
 	- If the repository gets public
 		- TODO Restructure so that GitHub readme is outside Logseq folder

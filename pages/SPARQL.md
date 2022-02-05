@@ -19,6 +19,7 @@
 	- [SPARQL Tutorial at Apache Jena](https://jena.apache.org/tutorials/sparql.html)
 	- [Wikidata SPARQL tutorial](https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial) #Wikidata
 		- [Statements with Qualifiers](https://wdqs-tutorial.toolforge.org/index.php/simple-queries/qualifiers/statements-with-qualifiers/)
+		  id:: 61fe46bb-6fc5-4d5e-b917-d0da5b02a96a
 	- [Wikidata SPARQL tutorial](https://wdqs-tutorial.toolforge.org/) (new) #Wikidata
 	- [Querying Wikidata: SELECT vs CONSTRUCT](https://markhneedham.com/blog/2020/02/02/querying-wikidata-construct-select/) #Wikidata
 	- [Learn SPARQL - Tutorial | Stardog](https://www.stardog.com/tutorials/sparql/)  #Stardog

@@ -154,3 +154,6 @@
 - ### Property paths
   id:: 61fd57ec-536d-4dbf-ae91-8f67c84f4daf
 	- ![ComingSoon.svg](../assets/ComingSoon_1643993150465_0.svg)
+- ### Properties for statements (Wikidata)
+	- [[Example]] : EU Presidents
+	-

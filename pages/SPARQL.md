@@ -18,10 +18,11 @@
 	- [SPARQL Tutorial by data.world](https://docs.data.world/tutorials/sparql/) #[[data.world]]
 	- [SPARQL Tutorial at Apache Jena](https://jena.apache.org/tutorials/sparql.html)
 	- [Wikidata SPARQL tutorial](https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial) #Wikidata
+		- [Statements with Qualifiers](https://wdqs-tutorial.toolforge.org/index.php/simple-queries/qualifiers/statements-with-qualifiers/)
 	- [Wikidata SPARQL tutorial](https://wdqs-tutorial.toolforge.org/) (new) #Wikidata
 	- [Querying Wikidata: SELECT vs CONSTRUCT](https://markhneedham.com/blog/2020/02/02/querying-wikidata-construct-select/) #Wikidata
 	- [Learn SPARQL - Tutorial | Stardog](https://www.stardog.com/tutorials/sparql/)  #Stardog
-	- [Constructing More Advanced SPARQL Queries | by Angus Addlesee | Wallscope | Medium](https://medium.com/wallscope/constructing-more-advanced-sparql-queries-72d5ade1eedc)
+	- [Constructing More Advanced SPARQL Queries by Angus Addlesee](https://medium.com/wallscope/constructing-more-advanced-sparql-queries-72d5ade1eedc)
 - ---
 - [[Note]]s
 	- Officially they are called "recommendations"

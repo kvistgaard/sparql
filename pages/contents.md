@@ -1,5 +1,6 @@
 - [[How to use this graph]]
 - [[SPARQL training course]]
-- [[SPARQL Endpoints]]
 - [[SPARQL Syntax]]
-- [[Tutorial]]
+- [[SPARQL Endpoints]]
+- [[Exploratory queries]]
+- [[Tutorial]]s

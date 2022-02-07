@@ -1,6 +1,7 @@
 public:: false
 
 - TODO Get SPARQL endpoints by query
+- TODO Test very big export
 - TODO Replace the favicon
 - TODO Add shortcuts to How to use this graph
 - TODO Fix issues with ((5601edec-7d0a-4be1-b12c-8357da7b0b94)) images

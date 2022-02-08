@@ -3,4 +3,5 @@
 - [[SPARQL Syntax]]
 - [[SPARQL Endpoints]]
 - [[Exploratory queries]]
-- [[Tutorial]]s
+- [Ontologies]([[Ontology]])
+- [Tutorials]([[Tutorial]])

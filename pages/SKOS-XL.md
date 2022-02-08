@@ -39,7 +39,7 @@
 		- skos:topConceptOf
 		- skosxl:altLabel
 		- skosxl:hiddenLabel
-		- skosxl:labelRelation
+		- skosxl:labelRelation[*](https://www.w3.org/TR/skos-reference/#xl-label-relations)
 		- skosxl:prefLabel
 	- ### Datatype properties
 		- skos:notation

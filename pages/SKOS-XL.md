@@ -1,4 +1,6 @@
 - type:: [[Ontology]]
+- The specification of SKOS-XL is available as a [separate document](https://www.w3.org/TR/skos-reference/skos-xl.html) and as a [section within the SKOS specification](https://www.w3.org/TR/skos-reference/#xl).
+- This page describes the resulting extended ontology SKOS + SKOS-XL which is what in practice is referred to as SKOS-XL.
 - [[Class Diagram]]
 	- ![image.png](../assets/SKOS-XLdiagram.png){:height 628, :width 746}
 - ## Classes

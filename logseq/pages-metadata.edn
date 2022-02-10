@@ -4,83 +4,197 @@
  {:block/name "b",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
+ {:block/name "backlog",
+  :block/created-at 1644056026461,
+  :block/updated-at 1644143605907}
  {:block/name "c",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
  {:block/name "card",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
+ {:block/name "cdm",
+  :block/created-at 1643873552553,
+  :block/updated-at 1644338376883}
  {:block/name "cellar",
   :block/created-at 1643211399047,
-  :block/updated-at 1643211399047}
+  :block/updated-at 1643873546105}
+ {:block/name "class diagram",
+  :block/created-at 1644389164843,
+  :block/updated-at 1644389164843}
+ {:block/name "concat",
+  :block/created-at 1643817153436,
+  :block/updated-at 1643818675370}
  {:block/name "contents",
   :block/created-at 1642507403409,
-  :block/updated-at 1642507403409}
+  :block/updated-at 1644338355991}
+ {:block/name "count",
+  :block/created-at 1644389164840,
+  :block/updated-at 1644389164840}
+ {:block/name "covid-19",
+  :block/created-at 1644389164844,
+  :block/updated-at 1644389164844}
+ {:block/name "data.world",
+  :block/created-at 1644389164844,
+  :block/updated-at 1644389164844}
+ {:block/name "day",
+  :block/created-at 1644389164840,
+  :block/updated-at 1644389164840}
  {:block/name "dbpedia",
   :block/created-at 1643211399048,
-  :block/updated-at 1643211399048}
+  :block/updated-at 1643821759548}
+ {:block/name "documentation",
+  :block/created-at 1644389164843,
+  :block/updated-at 1644389164843}
  {:block/name "doing",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
  {:block/name "done",
   :block/created-at 1642507403409,
-  :block/updated-at 1642507403409}
+  :block/updated-at 1643702863028}
  {:block/name "ec data platform",
   :block/created-at 1643211399047,
   :block/updated-at 1643211399047}
+ {:block/name "encode_for_uri",
+  :block/created-at 1644389164844,
+  :block/updated-at 1644389164844}
  {:block/name "eu knowledge graph",
   :block/created-at 1643211399048,
   :block/updated-at 1643211399048}
  {:block/name "example",
   :block/created-at 1642515832242,
   :block/updated-at 1642515832242}
+ {:block/name "exploratory queries",
+  :block/created-at 1643821003386,
+  :block/updated-at 1643957036222}
  {:block/name "favorites",
   :block/created-at 1642507403408,
   :block/updated-at 1642507403408}
+ {:block/name "feb 2nd, 2022",
+  :block/created-at 1643760000000,
+  :block/updated-at 1643760000000}
+ {:block/name "feb 3rd, 2022",
+  :block/created-at 1643846400000,
+  :block/updated-at 1643846400000}
+ {:block/name "federated query",
+  :block/created-at 1644389164843,
+  :block/updated-at 1644389164843}
+ {:block/name "filter",
+  :block/created-at 1644389164844,
+  :block/updated-at 1644389164844}
+ {:block/name "function",
+  :block/created-at 1644389164843,
+  :block/updated-at 1644389164843}
+ {:block/name "function/on rdf terms",
+  :block/created-at 1644389164843,
+  :block/updated-at 1644389164843}
+ {:block/name "function/on strings",
+  :block/created-at 1644389164844,
+  :block/updated-at 1644389164844}
+ {:block/name "function/set function",
+  :block/created-at 1644389164843,
+  :block/updated-at 1644389164843}
+ {:block/name "graph",
+  :block/created-at 1644389164843,
+  :block/updated-at 1644389164843}
+ {:block/name "group by",
+  :block/created-at 1644389164844,
+  :block/updated-at 1644389164844}
+ {:block/name "group_concat",
+  :block/created-at 1643983660209,
+  :block/updated-at 1643983676423}
+ {:block/name "hours",
+  :block/created-at 1644389164840,
+  :block/updated-at 1644389164840}
  {:block/name "how to use this graph",
   :block/created-at 1643211399048,
-  :block/updated-at 1643211399048}
- {:block/name "https_",
-  :block/created-at 1643211399047,
-  :block/updated-at 1643211399047}
- {:block/name "https_//www.w3.org",
-  :block/created-at 1643211399048,
-  :block/updated-at 1643211399048}
- {:block/name "https_//www.w3.org/tr",
-  :block/created-at 1643211399047,
-  :block/updated-at 1643211399047}
+  :block/updated-at 1644072559363}
  {:block/name "in-progress",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
+ {:block/name "iri",
+  :block/created-at 1643817333406,
+  :block/updated-at 1643818038402}
+ {:block/name "jul 11th, 2018",
+  :block/created-at 1531267200000,
+  :block/updated-at 1531267200000}
+ {:block/name "lang",
+  :block/created-at 1643649703150,
+  :block/updated-at 1643649773503}
  {:block/name "later",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
  {:block/name
   "mailto_ivaylo.velitchkov@ext.ec.europa.eu_subject=question_2ffeedback_20on_20the_20wiki_20_22sparql_20knowledge_20graph_22",
   :block/created-at 1643211399047,
-  :block/updated-at 1643211399047}
+  :block/updated-at 1643647926719}
+ {:block/name "minutes",
+  :block/created-at 1644389164844,
+  :block/updated-at 1644389164844}
+ {:block/name "month",
+  :block/created-at 1644389164840,
+  :block/updated-at 1644389164840}
+ {:block/name "not exists",
+  :block/created-at 1644389164844,
+  :block/updated-at 1644389164844}
  {:block/name "note",
   :block/created-at 1642507403408,
   :block/updated-at 1642507403408}
  {:block/name "now",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
+ {:block/name "ontology",
+  :block/created-at 1644389164843,
+  :block/updated-at 1644389164843}
+ {:block/name "op",
+  :block/created-at 1644389164843,
+  :block/updated-at 1644389164843}
  {:block/name "open data portal",
   :block/created-at 1643211399047,
-  :block/updated-at 1643211399047}
+  :block/updated-at 1643906241468}
+ {:block/name "optional",
+  :block/created-at 1644389164843,
+  :block/updated-at 1644389164843}
+ {:block/name "owl",
+  :block/created-at 1644389164843,
+  :block/updated-at 1644389164843}
+ {:block/name "prefixes",
+  :block/created-at 1644389164840,
+  :block/updated-at 1644389164840}
+ {:block/name "publications office",
+  :block/created-at 1643819219804,
+  :block/updated-at 1643819222684}
  {:block/name "query",
   :block/created-at 1642515832242,
-  :block/updated-at 1642515832242}
+  :block/updated-at 1644144271025}
  {:block/name "rdf",
   :block/created-at 1642503204041,
   :block/updated-at 1642503204088}
+ {:block/name "rdf store",
+  :block/created-at 1644389164844,
+  :block/updated-at 1644389164844}
+ {:block/name "regex",
+  :block/created-at 1643986035152,
+  :block/updated-at 1643987588088}
+ {:block/name "sample",
+  :block/created-at 1643983727457,
+  :block/updated-at 1643983727457}
+ {:block/name "seconds",
+  :block/created-at 1644389164843,
+  :block/updated-at 1644389164843}
+ {:block/name "skos",
+  :block/created-at 1644389164843,
+  :block/updated-at 1644389164843}
+ {:block/name "skos-xl",
+  :block/created-at 1643818663261,
+  :block/updated-at 1644389156161}
  {:block/name "sparql",
   :block/created-at 1642503770582,
-  :block/updated-at 1642504595571}
+  :block/updated-at 1644054275472}
+ {:block/name "sparql endpoint",
+  :block/created-at 1644389164843,
+  :block/updated-at 1644389164843}
  {:block/name "sparql endpoints",
-  :block/created-at 1643211399047,
-  :block/updated-at 1643211399047}
- {:block/name "sparql knowledge",
   :block/created-at 1643211399047,
   :block/updated-at 1643211399047}
  {:block/name "sparql knowledge graph",
@@ -88,19 +202,28 @@
   :block/updated-at 1643211399047}
  {:block/name "sparql syntax",
   :block/created-at 1642503371267,
-  :block/updated-at 1643089869723}
+  :block/updated-at 1643977357688}
  {:block/name "sparql training course",
   :block/created-at 1643211399047,
-  :block/updated-at 1643211399047}
+  :block/updated-at 1644056503860}
  {:block/name "specification",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
  {:block/name "stardog",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
+ {:block/name "strstarts",
+  :block/created-at 1643817124363,
+  :block/updated-at 1643983032084}
+ {:block/name "substr",
+  :block/created-at 1643649636355,
+  :block/updated-at 1643649645833}
  {:block/name "syntax",
   :block/created-at 1642515832242,
   :block/updated-at 1642515832242}
+ {:block/name "template",
+  :block/created-at 1643818128980,
+  :block/updated-at 1644056291150}
  {:block/name "todo",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
@@ -108,14 +231,20 @@
   :block/created-at 1643090554988,
   :block/updated-at 1643091528610}
  {:block/name "tutorial",
-  :block/created-at 1642507403409,
-  :block/updated-at 1642507403409}
- {:block/name "tutorials",
-  :block/created-at 1643211399047,
-  :block/updated-at 1643211399047}
+  :block/created-at 1644389164840,
+  :block/updated-at 1644389164840}
+ {:block/name "union",
+  :block/created-at 1644389164843,
+  :block/updated-at 1644389164843}
+ {:block/name "uri",
+  :block/created-at 1644389164843,
+  :block/updated-at 1644389164843}
  {:block/name "values",
   :block/created-at 1642515118536,
-  :block/updated-at 1643088611758}
+  :block/updated-at 1643818647932}
+ {:block/name "vocbench",
+  :block/created-at 1643708479679,
+  :block/updated-at 1643819371896}
  {:block/name "wait",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
@@ -125,6 +254,9 @@
  {:block/name "wikidata",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
+ {:block/name "year",
+  :block/created-at 1644389164840,
+  :block/updated-at 1644389164840}
  {:block/name "⚒ work page",
   :block/created-at 1643211399047, 
-  :block/updated-at 1643211399047}]
+  :block/updated-at 1644144910537}]

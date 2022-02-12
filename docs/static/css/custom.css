@@ -1,4 +1,4 @@
-*/
+
 #head .ui__dropdown-trigger,
 #left-sidebar .flashcards-nav,
 #left-sidebar .all-pages-nav,
@@ -7,4 +7,6 @@
 #right-sidebar .cp__right-sidebar-settings div:last-child {
     display: none;
 }
-/*
+a.delete {
+  display: none;
+}

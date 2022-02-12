@@ -1,6 +1,6 @@
 type:: [[SPARQL Endpoint]], [[RDF Store]]
 url:: http://publications.europa.eu/webapi/rdf/sparql
-triples:: 931 599 987
+triples:: 1 865 610 770
 date:: [[Feb 2nd, 2022]]
 
 - Ontology: [[CDM]]

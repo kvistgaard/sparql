@@ -34,9 +34,16 @@
 	  	UNION
 	  	{ GRAPH ?g { ?s ?p ?o } }
 	  }
+	  ```#Query #GRAPH #UNION
+	- Total number of triples (from all graphs)
+	- ```sparql
+	  SELECT (COUNT (?s) as ?Number_of_triples)
+	  
+	  {
+	     { ?s ?p ?o } UNION { GRAPH ?g { ?s ?p ?o } }
+	  }
 	  ```
-	  #Query #GRAPH #UNION
-	-
+	  #Query #COUN #GRAPH #UNION
 - Sample entity and count
 	- ```sparql
 	  SELECT SAMPLE(?s) as ?sample count(?s) as ?count ?class

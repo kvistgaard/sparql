@@ -1,0 +1,18 @@
+# Check what documents exist in Cellar for EU Case 'C-99/99'
+
+PREFIX cdm:<http://publications.europa.eu/ontology/cdm#>
+PREFIX lang:<http://publications.europa.eu/resource/authority/language/>
+PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
+PREFIX owl:<http://www.w3.org/2002/07/owl#>
+
+SELECT DISTINCT 
+    ?workId as ?id 
+WHERE {  
+    graph ?ge { 
+        ?exp cdm:expression_belongs_to_work ?s .
+        ?exp cdm:expression_title ?title
+    } 
+    ?s cdm:work_id_document ?workId.
+    FILTER (?workId IN ("celex:61999CJ0099", "celex:61999CJ0099"^^xsd:string,"celex:61999CO0099", "celex:61999CO0099"^^xsd:string,"celex:61999CC0099", "celex:61999CC0099"^^xsd:string,"celex:61999CV0099", "celex:61999CV0099"^^xsd:string,"celex:61999CX0099", "celex:61999CX0099"^^xsd:string,"celex:61999CD0099", "celex:61999CD0099"^^xsd:string,"celex:61999CA0099", "celex:61999CA0099"^^xsd:string,"celex:61999CB0099", "celex:61999CB0099"^^xsd:string,"celex:61999CG0099", "celex:61999CG0099"^^xsd:string,"celex:61999CN0099", "celex:61999CN0099"^^xsd:string,"celex:61999CU0099", "celex:61999CU0099"^^xsd:string))   
+    BIND(?title_ as ?baseTitle)
+}

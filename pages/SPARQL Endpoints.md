@@ -11,7 +11,12 @@
 	- [LOD Endpoints - LCD Space](https://webgate.ec.europa.eu/fpfis/wikis/display/DataCollab/LOD+Endpoints)
 - ### Other SPARQL Editors
 	- Online
-		- https://yasgui.triply.cc (recommended; also used in [[VocBench]] )
+		- https://yasgui.triply.cc (recommended; also used in [[VocBench]] ), [[YASGUI]]
+		- https://op.europa.eu/en/advanced-sparql-query-editor, [[Flint]] #OP
 		- http://sparql.carsten.io
 	- Offline
-		- Visual Studio Code plug-in: SPARQL Executor
+		- Visual Studio Code plug-in: [[SPARQL Executor]]
+		- [[YASGUI]] is open source and can used offline [TriplyDB/Yasgui: Yet Another Sparql GUI](https://github.com/TriplyDB/Yasgui)
+		- Notebooks
+			-
+		-

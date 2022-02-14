@@ -1,6 +1,7 @@
 - All important points from the training course, collected for quick reference. See also [[Tutorial]]s.
 - ### SPARQL Interactions
-	- ![SPARQLinteractions.svg](../assets/SPARQLinteractions_1643113721643_0.svg)
+	- ![SPARQLinteractions.svg](../assets/SPARQLinteractions_1643113721643_0.svg){:height 304, :width 746}
+	- See [[SPARQL Editors]]
 - ### Two triple patterns, same subject
 	- ```sparql
 	  SELECT ?country ?capital ?population 

@@ -2,6 +2,7 @@
 - [[SPARQL training course]]
 - [[SPARQL Syntax]]
 - [[SPARQL Endpoints]]
+- [[SPARQL Editors]]
 - [[Exploratory queries]]
 - [Ontologies]([[Ontology]])
 - [Tutorials]([[Tutorial]])

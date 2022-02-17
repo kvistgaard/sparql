@@ -79,16 +79,6 @@
 		  
 		  ```
 		  #Query
-- ### Filtering resources with the same namespace
-	- Find all [[SKOS]] properties in use
-		- ```sparql
-		  SELECT DISTINCT ?property
-		  WHERE {
-		      ?s ?property ?o .
-		      FILTER (STRSTARTS(STR(?property), "http://www.w3.org/2004/02/skos/core#" ))
-		  }
-		  ```
-		  #Query #STRSTARTS
 - ### Negation
 	- `NOT EXISTS` - Testing for absence of a pattern (recommended in most cases)
 	- `MINUS`      -  Removing possible solutions

@@ -5,4 +5,6 @@
 - [[SPARQL Editors]]
 - [[Exploratory queries]]
 - [Ontologies]([[Ontology]])
+- [[Prefixes]]
+- [[Variables]]
 - [Tutorials]([[Tutorial]])

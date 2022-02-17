@@ -1,1 +1,5 @@
-- http://prefix.cc
+- Prefixes can be chosen freely and the prefix declaration shows what each prefix stands for. Yet, many prefixes are standardized and some query services, such as [[DBpedia]] and [[Wikidata]] have them predefined.
+- To get the list of predefined prefixes in [[DBpedia]] , go the [endpoint](https://dbpedia.org/sparql) and select from menu Tables → Namespace Prefixes. Here's a direct [link](https://dbpedia.org/sparql/?help=nsdecl).
+- To get the list of predefined prefixes in [[Wikidata]], go to the [service user interface](https://query.wikidata.org) and click on the pin icon on the left.
+- To add standard prefixes when using YASGUI, type PREFIX and start typing the standard one until it appears for autocomplete.
+- The most commonly used namespace lookup service is http://prefix.cc  .

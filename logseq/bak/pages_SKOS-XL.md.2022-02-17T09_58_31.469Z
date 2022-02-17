@@ -1,7 +1,7 @@
 - type:: [[Ontology]]
 - The specification of SKOS-XL is available as a [separate document](https://www.w3.org/TR/skos-reference/skos-xl.html) and as a [section within the SKOS specification](https://www.w3.org/TR/skos-reference/#xl).
 - This page describes the resulting extended ontology SKOS + SKOS-XL which is what in practice is referred to as SKOS-XL.
-- ## [[Class Diagram]]
+- [[Class Diagram]]
 	- ![image.png](../assets/SKOS-XLdiagram.png){:height 628, :width 746}
 - ## Classes
 	- skos:Collection
@@ -46,35 +46,33 @@
 	- ### Datatype properties
 		- skos:notation
 		- skosxl:literalForm
-- ## Queries
-	- Get all properties and classes of [[SKOS-XL]] (including [[SKOS]])
-		- ```sparql
-		  SELECT DISTINCT ?Class ?aProperty ?oProperty ?dProperty
-		  
-		  WHERE {
-		  {VALUES ?ns {"http://www.w3.org/2008/05/skos-xl#" "http://www.w3.org/2004/02/skos/core#"}
-		  ?Class a owl:Class .
-		  FILTER (strstarts(str(?Class), ?ns))}
-		  
-		  UNION
-		  {
-		  VALUES ?ns {"http://www.w3.org/2008/05/skos-xl#" "http://www.w3.org/2004/02/skos/core#"}
-		  ?aProperty a owl:AnnotationProperty.
-		  FILTER (strstarts(str(?aProperty), ?ns))
-		  }
-		    
-		  UNION
-		  
-		  {VALUES ?ns {"http://www.w3.org/2008/05/skos-xl#" "http://www.w3.org/2004/02/skos/core#"}
-		  ?oProperty a owl:ObjectProperty .
-		  FILTER (strstarts(str(?oProperty), ?ns))}
-		  
-		  UNION
-		  {VALUES ?ns {"http://www.w3.org/2008/05/skos-xl#" "http://www.w3.org/2004/02/skos/core#"}
-		  ?dProperty a owl:DatatypeProperty .
-		  FILTER (strstarts(str(?dProperty), ?ns))}
-		  
-		  }
-		  ORDER BY  ?dProperty ?oProperty ?aProperty
-		  ```
-			- #VALUES #UNION #STRSTARTS #Query
+- Get all properties and classes of [[SKOS-XL]] (including [[SKOS]])
+	- ```sparql
+	  SELECT DISTINCT ?Class ?aProperty ?oProperty ?dProperty
+	  WHERE {
+	  {VALUES ?ns {"http://www.w3.org/2008/05/skos-xl#" "http://www.w3.org/2004/02/skos/core#"}
+	  ?Class a owl:Class .
+	  FILTER (strstarts(str(?Class), ?ns))}
+	  
+	  UNION
+	  {
+	  VALUES ?ns {"http://www.w3.org/2008/05/skos-xl#" "http://www.w3.org/2004/02/skos/core#"}
+	  ?aProperty a owl:AnnotationProperty.
+	  FILTER (strstarts(str(?aProperty), ?ns))
+	  }
+	  
+	  UNION
+	  
+	  {VALUES ?ns {"http://www.w3.org/2008/05/skos-xl#" "http://www.w3.org/2004/02/skos/core#"}
+	  ?oProperty a owl:ObjectProperty .
+	  FILTER (strstarts(str(?oProperty), ?ns))}
+	  
+	  UNION
+	  {VALUES ?ns {"http://www.w3.org/2008/05/skos-xl#" "http://www.w3.org/2004/02/skos/core#"}
+	  ?dProperty a owl:DatatypeProperty .
+	  FILTER (strstarts(str(?dProperty), ?ns))}
+	  
+	  }
+	  ORDER BY  ?dProperty ?oProperty ?aProperty
+	  ```
+		- #VALUES #UNION #STRSTARTS #Query

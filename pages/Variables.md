@@ -1,0 +1,6 @@
+- A query variable is marked by the use of either "?" or "$".
+- The"?" or "$" is not part of the variable name.
+- In a query, $x and ?x identify the same variable.
+- All queries in this wiki use only "?".
+- Allowable characters are [a-z], [A-Z], [0-9], _, · and diacritics. Hyphens are not allowed.
+- When using several words, it is recommended to put them either in CamelCase (example: NumberOfItems) or use underscore (Number_Of_Items).

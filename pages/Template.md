@@ -1,4 +1,4 @@
-pubic:: false
+public:: false
 
 - type:: [[SPARQL Endpoint]], [[RDF Store]]
   url:: https://

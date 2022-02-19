@@ -28,12 +28,6 @@
  {:block/name "contents",
   :block/created-at 1642507403409,
   :block/updated-at 1644824643145}
- {:block/name "coun",
-  :block/created-at 1645253696137,
-  :block/updated-at 1645253696137}
- {:block/name "count",
-  :block/created-at 1644389164840,
-  :block/updated-at 1644389164840}
  {:block/name "covid-19",
   :block/created-at 1644389164844,
   :block/updated-at 1644389164844}
@@ -82,12 +76,6 @@
  {:block/name "feb 3rd, 2022",
   :block/created-at 1643846400000,
   :block/updated-at 1643846400000}
- {:block/name "federated query",
-  :block/created-at 1644389164843,
-  :block/updated-at 1644389164843}
- {:block/name "filter",
-  :block/created-at 1644389164844,
-  :block/updated-at 1644389164844}
  {:block/name "flint",
   :block/created-at 1645253696137,
   :block/updated-at 1645253696137}
@@ -103,15 +91,9 @@
  {:block/name "function/set function",
   :block/created-at 1644389164843,
   :block/updated-at 1644389164843}
- {:block/name "graph",
-  :block/created-at 1645253696138,
-  :block/updated-at 1645253696138}
  {:block/name "gremlin",
   :block/created-at 1645253696138,
   :block/updated-at 1645253696138}
- {:block/name "group by",
-  :block/created-at 1644389164844,
-  :block/updated-at 1644389164844}
  {:block/name "group_concat",
   :block/created-at 1643983660209,
   :block/updated-at 1643983676423}
@@ -170,9 +152,6 @@
  {:block/name "open data portal",
   :block/created-at 1643211399047,
   :block/updated-at 1643906241468}
- {:block/name "optional",
-  :block/created-at 1644389164843,
-  :block/updated-at 1644389164843}
  {:block/name "owl",
   :block/created-at 1644389164843,
   :block/updated-at 1644389164843}

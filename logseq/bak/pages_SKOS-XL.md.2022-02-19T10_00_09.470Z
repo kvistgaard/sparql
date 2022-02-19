@@ -4,54 +4,51 @@
 - ## [[Class Diagram]]
 	- ![image.png](../assets/SKOS-XLdiagram.png){:height 628, :width 746}
 		- #+BEGIN_NOTE
-		  Doesn't show all object properties and none of the annotation properties. See the complete class and property hierarchies below.
+		  Doesn't show all object properties and none of the annotation properties. See the full list below.
 		  #+END_NOTE
 - ## Classes
 	- skos:Collection
-		- skos:OrderedCollection
 	- skos:Concept
 	- skos:ConceptScheme
-	- **skosxl:Label**
+	- skos:OrderedCollection
+	- skosxl:Label
 - ## Properties
 	- ### Annotation properties
-		- rdfs:label
-			- skos:prefLabel
-			- skos:altLabel
-			- skos:hiddenLabel
+		- skos:altLabel
+		- skos:changeNote
+		- skos:definition
+		- skos:editorialNote
+		- skos:example
+		- skos:hiddenLabel
+		- skos:historyNote
 		- skos:note
-			- skos:definition
-			- skos:changeNote
-			- skos:editorialNote
-			- skos:example
-			- skos:historyNote
-			- skos:scopeNote
+		- skos:prefLabel
+		- skos:scopeNote
 	- ### Object properties
+		- skos:broadMatch
+		- skos:broader
+		- skos:broaderTransitive
+		- skos:closeMatch
+		- skos:exactMatch
 		- skos:hasTopConcept
 		- skos:inScheme
+		- skos:mappingRelation
 		- skos:member
 		- skos:memberList
+		- skos:narrowMatch
+		- skos:narrower
+		- skos:narrowerTransitive
+		- skos:related
+		- skos:relatedMatch
 		- skos:semanticRelation
-collapsed:: true
-			- skos:broaderTransitive
-				- skos:broader
-					- skos:broadMatch
-			- skos:narrowerTransitive
-				- skos:narrower
-					- skos:narrowMatch
-			- skos:related
-				- skos:relatedMatch
-			- skos:mappingRelation
-				- skos:broadMatch
-				- skos:closeMatch
-					- skos:exactMatch
 		- skos:topConceptOf
-		- **skosxl:altLabel**
-		- **skosxl:hiddenLabel**
-		- **skosxl:labelRelation**[*](https://www.w3.org/TR/skos-reference/#xl-label-relations)
-		- **skosxl:prefLabel**
+		- skosxl:altLabel
+		- skosxl:hiddenLabel
+		- skosxl:labelRelation[*](https://www.w3.org/TR/skos-reference/#xl-label-relations)
+		- skosxl:prefLabel
 	- ### Datatype properties
 		- skos:notation
-		- **skosxl:literalForm**
+		- skosxl:literalForm
 - ## Queries
 	- Get all properties and classes of [[SKOS-XL]] (including [[SKOS]])
 		- ```sparql

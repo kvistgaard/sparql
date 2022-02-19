@@ -7,6 +7,9 @@ public:: false
 - TODO Fix issues with ((5601edec-7d0a-4be1-b12c-8357da7b0b94)) images
 	- open on the sidebar
 - TODO Consider showing 'All Pages'
+- TODO Show property hierarchy for
+	- TODO SKOS-XL
+	- TODO CDM
 - {{embed [[BACKLOG]]}}
 - ## Conditional
 	- If the repository gets public

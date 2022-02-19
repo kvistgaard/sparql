@@ -3,6 +3,9 @@
 - This page describes the resulting extended ontology SKOS + SKOS-XL which is what in practice is referred to as SKOS-XL.
 - ## [[Class Diagram]]
 	- ![image.png](../assets/SKOS-XLdiagram.png){:height 628, :width 746}
+		- #+BEGIN_NOTE
+		  Doesn't show all object properties and none of the annotation properties. See the full list below.
+		  #+END_NOTE
 - ## Classes
 	- skos:Collection
 	- skos:Concept

@@ -5,6 +5,6 @@ type:: [[Ontology]]
 - [[Class Diagram]][*](((61fb9031-930a-4300-8520-9aeed0826850)))
 	- ![image.png](../assets/image_1643875257354_0.png)
 	- ---
-		- [[Note]]
-			- This view is incomplete. Some class hierarchies are missing or collapsed.
-			  id:: 61fb9031-930a-4300-8520-9aeed0826850
+		- #+BEGIN_NOTE
+		  This view is incomplete. Some class hierarchies are missing or collapsed.
+		  #+END_NOTE

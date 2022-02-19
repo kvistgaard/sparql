@@ -6,7 +6,7 @@
   :block/updated-at 1642507403409}
  {:block/name "backlog",
   :block/created-at 1644056026461,
-  :block/updated-at 1644143605907}
+  :block/updated-at 1644495246973}
  {:block/name "c",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
@@ -18,7 +18,7 @@
   :block/updated-at 1644338376883}
  {:block/name "cellar",
   :block/created-at 1643211399047,
-  :block/updated-at 1643873546105}
+  :block/updated-at 1644664740078}
  {:block/name "class diagram",
   :block/created-at 1644389164843,
   :block/updated-at 1644389164843}
@@ -27,7 +27,10 @@
   :block/updated-at 1643818675370}
  {:block/name "contents",
   :block/created-at 1642507403409,
-  :block/updated-at 1644338355991}
+  :block/updated-at 1644824643145}
+ {:block/name "coun",
+  :block/created-at 1645253696137,
+  :block/updated-at 1645253696137}
  {:block/name "count",
   :block/created-at 1644389164840,
   :block/updated-at 1644389164840}
@@ -66,10 +69,13 @@
   :block/updated-at 1642515832242}
  {:block/name "exploratory queries",
   :block/created-at 1643821003386,
-  :block/updated-at 1643957036222}
+  :block/updated-at 1644664999850}
  {:block/name "favorites",
   :block/created-at 1642507403408,
   :block/updated-at 1642507403408}
+ {:block/name "feb 14th, 2022",
+  :block/created-at 1644796800000,
+  :block/updated-at 1644796800000}
  {:block/name "feb 2nd, 2022",
   :block/created-at 1643760000000,
   :block/updated-at 1643760000000}
@@ -82,6 +88,9 @@
  {:block/name "filter",
   :block/created-at 1644389164844,
   :block/updated-at 1644389164844}
+ {:block/name "flint",
+  :block/created-at 1645253696137,
+  :block/updated-at 1645253696137}
  {:block/name "function",
   :block/created-at 1644389164843,
   :block/updated-at 1644389164843}
@@ -95,8 +104,11 @@
   :block/created-at 1644389164843,
   :block/updated-at 1644389164843}
  {:block/name "graph",
-  :block/created-at 1644389164843,
-  :block/updated-at 1644389164843}
+  :block/created-at 1645253696138,
+  :block/updated-at 1645253696138}
+ {:block/name "gremlin",
+  :block/created-at 1645253696138,
+  :block/updated-at 1645253696138}
  {:block/name "group by",
   :block/created-at 1644389164844,
   :block/updated-at 1644389164844}
@@ -118,9 +130,15 @@
  {:block/name "jul 11th, 2018",
   :block/created-at 1531267200000,
   :block/updated-at 1531267200000}
+ {:block/name "jupyter notebook",
+  :block/created-at 1645253696138,
+  :block/updated-at 1645253696138}
  {:block/name "lang",
   :block/created-at 1643649703150,
   :block/updated-at 1643649773503}
+ {:block/name "langmatches",
+  :block/created-at 1645253696138,
+  :block/updated-at 1645253696138}
  {:block/name "later",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
@@ -164,6 +182,9 @@
  {:block/name "publications office",
   :block/created-at 1643819219804,
   :block/updated-at 1643819222684}
+ {:block/name "python",
+  :block/created-at 1645253696137,
+  :block/updated-at 1645253696137}
  {:block/name "query",
   :block/created-at 1642515832242,
   :block/updated-at 1644144271025}
@@ -187,16 +208,22 @@
   :block/updated-at 1644389164843}
  {:block/name "skos-xl",
   :block/created-at 1643818663261,
-  :block/updated-at 1644389156161}
+  :block/updated-at 1644389183214}
  {:block/name "sparql",
   :block/created-at 1642503770582,
   :block/updated-at 1644054275472}
+ {:block/name "sparql editors",
+  :block/created-at 1644767394392,
+  :block/updated-at 1644767427385}
  {:block/name "sparql endpoint",
   :block/created-at 1644389164843,
   :block/updated-at 1644389164843}
  {:block/name "sparql endpoints",
   :block/created-at 1643211399047,
-  :block/updated-at 1643211399047}
+  :block/updated-at 1644767387570}
+ {:block/name "sparql executor",
+  :block/created-at 1645253696137,
+  :block/updated-at 1645253696137}
  {:block/name "sparql knowledge graph",
   :block/created-at 1643211399047,
   :block/updated-at 1643211399047}
@@ -205,7 +232,7 @@
   :block/updated-at 1643977357688}
  {:block/name "sparql training course",
   :block/created-at 1643211399047,
-  :block/updated-at 1644056503860}
+  :block/updated-at 1644770192734}
  {:block/name "specification",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
@@ -242,9 +269,15 @@
  {:block/name "values",
   :block/created-at 1642515118536,
   :block/updated-at 1643818647932}
+ {:block/name "variables",
+  :block/created-at 1645253696138,
+  :block/updated-at 1645253696138}
  {:block/name "vocbench",
   :block/created-at 1643708479679,
   :block/updated-at 1643819371896}
+ {:block/name "vsc extension",
+  :block/created-at 1645253696137,
+  :block/updated-at 1645253696137}
  {:block/name "wait",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
@@ -254,6 +287,9 @@
  {:block/name "wikidata",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
+ {:block/name "yasgui",
+  :block/created-at 1645253696138,
+  :block/updated-at 1645253696138}
  {:block/name "year",
   :block/created-at 1644389164840,
   :block/updated-at 1644389164840}

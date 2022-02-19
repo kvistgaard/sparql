@@ -1,0 +1,15 @@
+- ### Online
+	- https://yasgui.triply.cc (recommended; also used in [[VocBench]] ), [[YASGUI]]
+	- https://op.europa.eu/en/advanced-sparql-query-editor, [[Flint]] #OP
+	- http://sparql.carsten.io
+- ### Offline
+	- Visual Studio Code with [[SPARQL Executor]] plug-in
+	- Emacs [SPARQLMode](https://www.emacswiki.org/emacs/SPARQLMode)
+	- [[YASGUI]] is open source and can used offline [TriplyDB/Yasgui: Yet Another Sparql GUI](https://github.com/TriplyDB/Yasgui)
+	- [Wikidata Query GUI]([wikimedia/wikidata-query-gui: Github mirror of "wikidata/query/gui" - our actual code is hosted with Gerrit (please see https://www.mediawiki.org/wiki/Developer_access for contributing)](https://github.com/wikimedia/wikidata-query-gui))
+	- **Notebooks**
+		- [Graph Notebook](https://github.com/aws/graph-notebook) #[[Jupyter Notebook]] #Python #Gremlin
+		- [[Jupyter Notebook]] with [SPARQL kernel](https://github.com/paulovn/sparql-kernel) Python
+		- [Apache Zeppelin](https://zeppelin.apache.org/) with [SPARQL Interpreter](https://zeppelin.apache.org/docs/0.9.0/interpreter/sparql.html)
+		-
+	-

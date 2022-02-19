@@ -3,7 +3,11 @@
 	- https://op.europa.eu/en/advanced-sparql-query-editor, [[Flint]] #OP
 	- http://sparql.carsten.io
 - ### Offline
-	- Visual Studio Code with [[SPARQL Executor]] plug-in
+	- Visual Studio Code (VSC) with [[SPARQL Executor]] plug-in #[[VSC Extension]]
+		- VSC extension for syntax highlighting and autocomplete
+			- SPARQL Language Server #[[VSC Extension]]
+				- which includes
+					- Stardog RDF Grammers #[[VSC Extension]]
 	- Emacs [SPARQLMode](https://www.emacswiki.org/emacs/SPARQLMode)
 	- [[YASGUI]] is open source and can used offline [TriplyDB/Yasgui: Yet Another Sparql GUI](https://github.com/TriplyDB/Yasgui)
 	- [Wikidata Query GUI]([wikimedia/wikidata-query-gui: Github mirror of "wikidata/query/gui" - our actual code is hosted with Gerrit (please see https://www.mediawiki.org/wiki/Developer_access for contributing)](https://github.com/wikimedia/wikidata-query-gui))

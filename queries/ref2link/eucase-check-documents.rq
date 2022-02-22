@@ -6,7 +6,7 @@ PREFIX xsd:<http://www.w3.org/2001/XMLSchema#>
 PREFIX owl:<http://www.w3.org/2002/07/owl#>
 
 SELECT DISTINCT 
-    ?workId as ?id 
+    (?workId as ?id)
 WHERE {  
     graph ?ge { 
         ?exp cdm:expression_belongs_to_work ?s .

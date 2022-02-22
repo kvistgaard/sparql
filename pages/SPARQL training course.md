@@ -161,9 +161,37 @@
 	  ```
 	  #Query #REGEX #FILTER #LANG
 - ### Assembling strings
+	- ```sparql
+	  PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+	  
+	  SELECT ?reg (IRI(CONCAT(STR(?eli),"/eng/pdf")) AS ?pdf_URL)
+	  
+	  {
+	    ?reg cdm:resource_legal_eli ?eli .
+	  }
+	  
+	  LIMIT 1000
+	  
+	  ```
+	  #Query #IRI #CONCAT #Cellar
 	- ![ComingSoon.svg](../assets/ComingSoon_1643993150465_0.svg)
-- ### Property paths
-  id:: 61fd57ec-536d-4dbf-ae91-8f67c84f4daf
-	- ![ComingSoon.svg](../assets/ComingSoon_1643993150465_0.svg)
+- ### Property Path
+	- [[Syntax]]
+		- ```sparql
+		  #Inverse Path:
+		      ^:property #Inverse path (object to subject)
+		  #Sequence Path:
+		      :property1/:property2  #A sequence path of :property1 followed by :property2
+		  #Alternative Path:
+		      :property1|:property2  #:property1 or property2 (all possibilities are tried)
+		  #Zero Or More:
+		      :property*  #A path that connects the subject and object of the path by zero or more matches of :property
+		  #One Or More:
+		      :property+  #A path that connects the subject and object of the path by one or more matches of :property
+		  #Zero Or One Path:
+		      :property?  #A path that connects the subject and object of the path by zero or one matches of :property
+		  ```
+		- [Property paths from the SPARQL 1.1 spec](https://www.w3.org/TR/sparql11-query/#propertypaths)
+		-
 - ### Properties for statements (Wikidata)
 	- ![ComingSoon.svg](../assets/ComingSoon_1643993150465_0.svg)

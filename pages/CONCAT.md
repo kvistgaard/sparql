@@ -13,4 +13,4 @@ type:: [[Function/On strings]]
 	  
 	  LIMIT 1000
 	  ``` 
-	  #Cellar #IRI #Query
+	  #Query #Cellar #IRI  #CONCAT

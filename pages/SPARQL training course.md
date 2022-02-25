@@ -174,8 +174,7 @@
 	  
 	  ```
 	  #Query #IRI #CONCAT #Cellar
-	- ![ComingSoon.svg](../assets/ComingSoon_1643993150465_0.svg)
-- ### Property Path
+- ### Property path
 	- [[Syntax]]
 		- ```sparql
 		  #Inverse Path:
@@ -192,6 +191,34 @@
 		      :property?  #A path that connects the subject and object of the path by zero or one matches of :property
 		  ```
 		- [Property paths from the SPARQL 1.1 spec](https://www.w3.org/TR/sparql11-query/#propertypaths)
+	- [[Example]]
+		- ```sparql
+		  SELECT (COUNT (DISTINCT ?child) AS ?Number_of_children)
+		  
+		  {
+		  ?MS a dbo:Country; 
+		      dct:subject dbc:Member_states_of_the_European_Union ;
+		      dbp:leaderName ?leader . 
+		  
+		  ?leader dbo:child|^dbo:parent  ?child.
+		  
+		  #Works the same as 
+		  #  {?leader dbo:child ?child.}
+		  #  UNION
+		  #  {?child dbo:parent ?leader}
+		  } 
+		  ```
+		  #Query #| #^ #UNION
+		- ![PropertyPath_ChildParent.svg](../assets/PropertyPath_ChildParent_1645774371298_0.svg)
 		-
+- ### Language tag
+	- The current best practice for language tags is defined in [RFC5646](https://www.rfc-editor.org/rfc/rfc5646.txt).
+	- [[LANGMATCHES]]
+		- `FILTER (LANG(?label) = "fr")` will only return results where the language tag of `?label` is `@fr`, while `FILTER LANGMATCHES( LANG(?label), "fr" )` will also include those with regions such as `@fr-BE`.
+- ### Wikidata Language and visualization service
+  collapsed:: true
+	- Influence graph in the age of Enlightenment
+		- <iframe src="https://w.wiki/4oDD" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe>
+		  #Wikidata #Query #FILTER #&&
 - ### Properties for statements (Wikidata)
 	- ![ComingSoon.svg](../assets/ComingSoon_1643993150465_0.svg)

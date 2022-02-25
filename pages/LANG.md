@@ -1,3 +1,3 @@
 type:: [[Function/On RDF Terms]]
 
-- The current best practice for language tags is defined in [RFC5646](https://www.rfc-editor.org/rfc/rfc5646.txt).
+- See [[Language tags]]

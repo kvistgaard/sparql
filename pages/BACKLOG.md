@@ -10,11 +10,6 @@ public:: false
 		- <iframe  src="https://w.wiki/wsi" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe>
 		  #Query #Wikidata
 	- See also ((61fe46bb-6fc5-4d5e-b917-d0da5b02a96a))
-- ### Logical operators
-  collapsed:: true
-	- Influence graph in the age of Enlightenment
-		- <iframe src="https://w.wiki/4oDD" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe>
-		  #Wikidata #Query
 - ---
 	- Property path table -- not used due to the Logseq bug
 		- |Syntax|Name|Matches|

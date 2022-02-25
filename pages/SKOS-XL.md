@@ -31,7 +31,7 @@
 		- skos:member
 		- skos:memberList
 		- skos:semanticRelation
-collapsed:: true
+		  collapsed:: true
 			- skos:broaderTransitive
 				- skos:broader
 					- skos:broadMatch

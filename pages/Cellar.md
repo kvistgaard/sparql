@@ -7,6 +7,32 @@ date:: [[Feb 2nd, 2022]]
 - Documentation
 	- [Cellar - Publications Office of the EU](https://op.europa.eu/en/publication-detail/-/publication/50ecce27-857e-11e8-ac6a-01aa75ed71a1/language-en/format-PDF/source-250197260), [[Jul 11th, 2018]]
 - [[Query]] [Examples]([[Example]])
+	- All regulation related to "data protection" with links to content in HTML in English.
+		- For other topics, replace or add one or more [[Eurovoc]] concepts in the [[VALUES]] list.
+		- For other languages formats, change the part with which the ELI is appended in the SELECT statement
+		- ```sparql
+		  PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
+		  PREFIX euvoc: <http://eurovoc.europa.eu/>
+		  PREFIX skosxl: <http://www.w3.org/2008/05/skos-xl#>
+		  PREFIX lang:<http://publications.europa.eu/resource/authority/language/>
+		  
+		  SELECT DISTINCT ?reg (IRI(CONCAT(STR(?eli),"/eng/html")) AS ?HTML_URL) ?title ?topic
+		  
+		  {
+		      VALUES ?topicURI {euvoc:5181}
+		      ?reg cdm:resource_legal_eli ?eli;
+		      cdm:work_is_about_concept_eurovoc ?topicURI .
+		      
+		      ?exp cdm:expression_belongs_to_work ?reg .
+		      ?exp cdm:expression_uses_language lang:ENG . 
+		      ?exp cdm:expression_title ?title .
+		  
+		      ?topicURI skosxl:prefLabel/skosxl:literalForm ?topic
+		      FILTER (LANG(?topic) = "en")
+		  }
+		  
+		  ```
+		  #Query #IRI #CONCAT #STR #FILTER
 	- African countries with number of EU laws related to them
 		- ```sparql
 		  #African countries with number of EU laws related to them

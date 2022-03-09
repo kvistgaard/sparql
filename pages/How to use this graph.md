@@ -13,7 +13,9 @@
 - #+BEGIN_TIP
   You can hide/show the bullets you see for each paragraph by pressing `t``d` and you can change between light and dark theme by pressing `t``t`.
   #+END_TIP
-- There is more but this should be enough to start with. If you have questions, [ask](mailto:ivaylo.velitchkov@ext.ec.europa.eu?subject=Question%2FFeedback%20on%20the%20wiki%20%22SPARQL%20Knowledge%20Graph%22).
+- There is more but this should be enough to start with. If you have questions, [ask](mailto:ivo@velitchkov.eu?subject=Question%2FFeedback%20on%20the%20wiki%20%22SPARQL%20Knowledge%20Graph%22).
+-
+- _Created using [Logseq](https://logseq.com), an open-source Markdown tool._
 - ---
 - [[Note]]s
 	- A block is content element such as paragraph, image, table, embedded video or a page and so on.

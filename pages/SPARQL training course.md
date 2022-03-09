@@ -139,7 +139,7 @@
 	  ```
 	  #Query #UNION
 	- #+BEGIN_NOTE
-	  This query will not give complete results, unless inferred triples on inverse properties are included. To guarantee complete results relying only on SPARQL, the inverse property should be included. See ((61fd57ec-536d-4dbf-ae91-8f67c84f4daf)).
+	  This query will not give complete results, unless inferred triples on inverse properties are included. To guarantee complete results relying only on SPARQL, the inverse property should be included. 
 	  #+END_NOTE
 - ### Search for string patterns
   id:: 61fd3a3d-81b5-448d-a76f-d1b0008b7476

@@ -3,9 +3,6 @@
 		- [Key shortcuts](https://triply.cc/docs/yasgui#supported-key-combinations)
 		- [Visualizations](https://triply.cc/docs/yasgui#supported-key-combinations)
 	- https://op.europa.eu/en/advanced-sparql-query-editor, [[Flint]] #OP
-	- https://sparql.gtf.fyi#
-		- can query files
-		- uses [[Oxigraph]] and [[YASGUI]]
 	- http://sparql.carsten.io
 - ### Offline
 	- Visual Studio Code (VSC) with [[SPARQL Executor]] plug-in #[[VSC Extension]]
@@ -17,9 +14,8 @@
 	- [[YASGUI]] is open source and can be used offline [TriplyDB/Yasgui: Yet Another Sparql GUI](https://github.com/TriplyDB/Yasgui)
 	- [Wikidata Query GUI]([wikimedia/wikidata-query-gui: Github mirror of "wikidata/query/gui" - our actual code is hosted with Gerrit (please see https://www.mediawiki.org/wiki/Developer_access for contributing)](https://github.com/wikimedia/wikidata-query-gui))
 	- **Notebooks**
-		- [SPARQL Notebook](https://marketplace.visualstudio.com/items?itemName=Zazuko.sparql-notebook) #[[VSC Extension]]
 		- [Graph Notebook](https://github.com/aws/graph-notebook) #[[Jupyter Notebook]] #Python #Gremlin
-		- [[Jupyter Notebook]] with [SPARQL kernel](https://github.com/paulovn/sparql-kernel), #Python
+		- [[Jupyter Notebook]] with [SPARQL kernel](https://github.com/paulovn/sparql-kernel) Python
 		- [Apache Zeppelin](https://zeppelin.apache.org/) with [SPARQL Interpreter](https://zeppelin.apache.org/docs/0.9.0/interpreter/sparql.html)
 		-
 	-

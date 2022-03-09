@@ -8,16 +8,16 @@
 		- uses [[Oxigraph]] and [[YASGUI]]
 	- http://sparql.carsten.io
 - ### Offline
-	- Visual Studio Code (VSC) with [[SPARQL Executor]] plug-in #[[VSC Extension]]
+	- Visual Studio Code (VSC) with [[SPARQL Executor]] plug-in #[[VSCode Extension]]
 		- VSC extension for syntax highlighting and autocomplete
-			- SPARQL Language Server #[[VSC Extension]]
+			- SPARQL Language Server #[[VSCode Extension]]
 				- which includes
-					- Stardog RDF Grammers #[[VSC Extension]]
+					- Stardog RDF Grammers #[[VSCode Extension]]
 	- Emacs [SPARQLMode](https://www.emacswiki.org/emacs/SPARQLMode)
 	- [[YASGUI]] is open source and can be used offline [TriplyDB/Yasgui: Yet Another Sparql GUI](https://github.com/TriplyDB/Yasgui)
 	- [Wikidata Query GUI]([wikimedia/wikidata-query-gui: Github mirror of "wikidata/query/gui" - our actual code is hosted with Gerrit (please see https://www.mediawiki.org/wiki/Developer_access for contributing)](https://github.com/wikimedia/wikidata-query-gui))
 	- **Notebooks**
-		- [SPARQL Notebook](https://marketplace.visualstudio.com/items?itemName=Zazuko.sparql-notebook) #[[VSC Extension]]
+		- [SPARQL Notebook](https://marketplace.visualstudio.com/items?itemName=Zazuko.sparql-notebook) #[[VSCode Extension]]
 		- [Graph Notebook](https://github.com/aws/graph-notebook) #[[Jupyter Notebook]] #Python #Gremlin
 		- [[Jupyter Notebook]] with [SPARQL kernel](https://github.com/paulovn/sparql-kernel), #Python
 		- [Apache Zeppelin](https://zeppelin.apache.org/) with [SPARQL Interpreter](https://zeppelin.apache.org/docs/0.9.0/interpreter/sparql.html)

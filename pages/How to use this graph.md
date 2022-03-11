@@ -11,8 +11,19 @@
   #+END_TIP
 - То explore visually the graph of all pages, click Graph on top right. You can interact with the graph. The block nodes are not shown but when searching (click on the magnifier icon on top left or press `alt+x`) you get both block and page results indicated with B and P respectively.
 - #+BEGIN_TIP
-  You can hide/show the bullets you see for each paragraph by pressing `t``d` and you can change between light and dark theme by pressing `t``t`.
+  You can hide/show the bullets you see for each paragraph by pressing `t``d`.
   #+END_TIP
+- Keyboard shortcuts
+	- |To do this|Press|
+	  |--|--|
+	  |Full text search|alt+x|
+	  |Go to home|gh|
+	  |Toggle document/bullet mode|td|
+	  |Toggle left sidebar|tl|
+	  |Toggle right sidebar|tr|
+	  |Toggle wide mode|tw|
+	  |Go to all pages|ga|
+	  |Go to graph view|gg|
 - There is more but this should be enough to start with. If you have questions, [ask](mailto:ivo@velitchkov.eu?subject=Question%2FFeedback%20on%20the%20wiki%20%22SPARQL%20Knowledge%20Graph%22).
 -
 - _Created using [Logseq](https://logseq.com), an open-source Markdown tool._

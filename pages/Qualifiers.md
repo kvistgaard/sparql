@@ -1,0 +1,5 @@
+- [[Wikidata]] qualifiers
+- See
+	- [Wikidata › SPARQL tutorial › Qualifiers](https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial/en-gb#Qualifiers)
+	- ((600748be-0c7a-4b4c-807d-a5c41f8ee80e))
+	- ((61fe46bb-6fc5-4d5e-b917-d0da5b02a96a))

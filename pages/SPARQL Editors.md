@@ -8,7 +8,7 @@
 		- uses [[Oxigraph]] and [[YASGUI]]
 	- http://sparql.carsten.io
 - ### Offline
-	- Visual Studio Code (VSC) with [[SPARQL Executor]] plug-in #[[VSCode Extension]]
+	- Visual Studio Code (VSCode) with [[SPARQL Executor]] plug-in #[[VSCode Extension]]
 		- VSC extension for syntax highlighting and autocomplete
 			- SPARQL Language Server #[[VSCode Extension]]
 				- which includes

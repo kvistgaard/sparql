@@ -1,14 +1,21 @@
 public:: false
 
 - TODO Get SPARQL endpoints by query
+  :LOGBOOK:
+  CLOCK: [2022-03-09 Wed 07:42:28]--[2022-03-09 Wed 07:42:30] =>  00:00:02
+  :END:
+- TODO Add to [[SPARQL training course]], more on property paths etc (take from PDFs, it's lots in PPT)
 - TODO Test very big export
 - DONE Replace the favicon
-- TODO Add shortcuts to How to use this graph
+- DOING Add shortcuts to How to use this graph (ore separate page)
+  :LOGBOOK:
+  CLOCK: [2022-03-09 Wed 08:29:48]
+  :END:
 - TODO Fix issues with ((5601edec-7d0a-4be1-b12c-8357da7b0b94)) images
 	- open on the sidebar
-- TODO Consider showing 'All Pages'
+- DONE Consider showing 'All Pages'
 - TODO Show property hierarchy for
-	- TODO SKOS-XL
+	- DONE SKOS-XL
 	- TODO CDM
 - {{embed [[BACKLOG]]}}
 - ## Conditional

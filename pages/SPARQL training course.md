@@ -174,7 +174,7 @@
 	  
 	  ```
 	  #Query #IRI #CONCAT #Cellar
-- ### Property path
+- ### Property paths
 	- [[Syntax]]
 		- ```sparql
 		  #Inverse Path:
@@ -210,15 +210,57 @@
 		  ```
 		  #Query #| #^ #UNION
 		- ![PropertyPath_ChildParent.svg](../assets/PropertyPath_ChildParent_1645774371298_0.svg)
+		- ```sparql
+		  SELECT
+		  (COUNT (DISTINCT ?Influencer) AS ?Num_Influencer) 
+		  (COUNT (DISTINCT ?Influenced) AS ?Num_Influenced) 
+		  
+		  WHERE {
+		  
+		       {dbr:Ludwig_Wittgenstein dbo:influencedBy|^dbo:influenced ?Influencer .} 
+		  
+		     UNION 
+		  
+		       {dbr:Ludwig_Wittgenstein dbo:influenced|^dbo:influencedBy ?Influenced .} 
+		  
+		  } 
+		  ```
+		  #Query #DBpedia #| #^ #COUNT #UNION
 		-
 - ### Language tag
 	- The current best practice for language tags is defined in [RFC5646](https://www.rfc-editor.org/rfc/rfc5646.txt).
 	- [[LANGMATCHES]]
 		- `FILTER (LANG(?label) = "fr")` will only return results where the language tag of `?label` is `@fr`, while `FILTER LANGMATCHES( LANG(?label), "fr" )` will also include those with regions such as `@fr-BE`.
+- ### Wikibase data mode
+	- ![image.png](../assets/image_1646977222963_0.png)
+- ### Wikidata label service
+	- Adding "Label" to a variable will get the label of the respective item if the Wikidata Label service is called in the query. For example, for ?item, ?itemLabel will get the labels in the selected language.
+	- ```sparql
+	  SELECT ?item ?itemLabel WHERE { ?item wdt:P31 wd:Q146 . 
+	  
+	  SERVICE wikibase:label { 
+	                 bd:serviceParam wikibase:language “en" } 
+	  } 
+	  ```
+	  #Query #Wikidata
+	- #+BEGIN_TIP
+	  To include a call to the Label Service in your query, just press Ctrl-Space and start typing "label" until you see the query fragment. Then change the language if needed.
+	  
+	  Check the [Label service manual](https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual#Label_service) for other capabilities. 
+	  #+END_TIP
 - ### Wikidata Language and visualization service
   collapsed:: true
-	- Influence graph in the age of Enlightenment
-		- <iframe src="https://w.wiki/4oDD" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe>
-		  #Wikidata #Query #FILTER #&&
+	- Influence graph in the age of Enlightenment <iframe src="https://w.wiki/4oDD" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe>
+	  #Wikidata #Query #FILTER #&&
 - ### Properties for statements (Wikidata)
-	- ![ComingSoon.svg](../assets/ComingSoon_1643993150465_0.svg)
+  id:: 600748be-0c7a-4b4c-807d-a5c41f8ee80e
+	- Item - Statement - Value - Qualifier Value
+		- ![WikidataStatementPropertiesGeneric.svg](../assets/WikidataStatementPropertiesGeneric_1644054801681_0.svg)
+	- [[Example]]: US Presidents
+		-
+		- ![WikidataStatementPropertiesUSpresident.svg](../assets/WikidataStatementPropertiesUSpresident_1644055097874_0.svg){:height 502, :width 680}
+		- With `?statement` variable <iframe src="https://w.wiki/4wNL" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe>
+		  #Query #Wikidata #Qualifiers
+		- With blank nodes <iframe  src="https://w.wiki/wsi" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe>
+		  #Query #Wikidata #Qualifiers
+	- See also ((61fe46bb-6fc5-4d5e-b917-d0da5b02a96a))

@@ -13,16 +13,17 @@
 	- [SPARQL 1.1 Graph Store HTTP Protocol](http://www.w3.org/TR/2013/REC-sparql11-http-rdf-update-20130321)
 - [[Tutorial]]s
   id:: 61ef8d42-1ee1-414c-94c7-95bf57b64808
-	- [SPARQL in 11 minutes (video)](https://www.youtube.com/watch?v=FvGndkpa4K0)
-	- [SPARQL video lectures from open HPI](https://open.hpi.de/courses/semanticweb2016/items/4HiNFQlE5zfD5nsU4MGArW)
+	- [SPARQL in 11 minutes](https://www.youtube.com/watch?v=FvGndkpa4K0) #Video
+	- [SPARQL lectures from open HPI](https://open.hpi.de/courses/semanticweb2016/items/4HiNFQlE5zfD5nsU4MGArW) #Video
 	- [SPARQL Tutorial by data.world](https://docs.data.world/tutorials/sparql/) #[[data.world]]
-	- [SPARQL Tutorial at Apache Jena](https://jena.apache.org/tutorials/sparql.html)
+	- [SPARQL Tutorial by Apache Jena](https://jena.apache.org/tutorials/sparql.html)
+	- [SPARQL Tutorial by Triply](https://youtu.be/nbUYrs_wWto) #Triply #Video
+	- [SPARQL Tutorial by Stardog](https://www.stardog.com/tutorials/sparql/)  #Stardog
 	- [Wikidata SPARQL tutorial](https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial) #Wikidata
 		- [Statements with Qualifiers](https://wdqs-tutorial.toolforge.org/index.php/simple-queries/qualifiers/statements-with-qualifiers/)
 		  id:: 61fe46bb-6fc5-4d5e-b917-d0da5b02a96a
 	- [Wikidata SPARQL tutorial](https://wdqs-tutorial.toolforge.org/) (new) #Wikidata
 	- [Querying Wikidata: SELECT vs CONSTRUCT](https://markhneedham.com/blog/2020/02/02/querying-wikidata-construct-select/) #Wikidata
-	- [Learn SPARQL - Tutorial | Stardog](https://www.stardog.com/tutorials/sparql/)  #Stardog
 	- [Constructing More Advanced SPARQL Queries by Angus Addlesee](https://medium.com/wallscope/constructing-more-advanced-sparql-queries-72d5ade1eedc)
 - ---
 - [[Note]]s

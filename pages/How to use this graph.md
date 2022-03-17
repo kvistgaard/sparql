@@ -16,8 +16,9 @@
 - Keyboard shortcuts
 	- |To do this|Press|
 	  |--|--|
-	  |Full text search|alt+x|
+	  |Full text search|ff|
 	  |Go to home|gh|
+	  |Collapse or expand all blocks|to|
 	  |Toggle document/bullet mode|td|
 	  |Toggle left sidebar|tl|
 	  |Toggle right sidebar|tr|

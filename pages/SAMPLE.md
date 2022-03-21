@@ -1,1 +1,1 @@
-type:: [[Function/Set Function]]
+type:: [[Function/Aggregate Function]]

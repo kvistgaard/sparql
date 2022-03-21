@@ -16,7 +16,7 @@
 - Keyboard shortcuts
 	- |To do this|Press|
 	  |--|--|
-	  |Full text search|ff|
+	  |Full text search|alt+x|
 	  |Go to home|gh|
 	  |Collapse or expand all blocks|to|
 	  |Toggle document/bullet mode|td|

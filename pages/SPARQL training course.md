@@ -1,8 +1,10 @@
 - All important points from the training course, collected for quick reference. See also [[Tutorial]]s.
 - ### SPARQL Interactions
+  collapsed:: true
 	- ![SPARQLinteractions.svg](../assets/SPARQLinteractions_1643113721643_0.svg){:height 304, :width 746}
 	- See [[SPARQL Editors]]
 - ### Two triple patterns, same subject
+  collapsed:: true
 	- ```sparql
 	  SELECT ?country ?capital ?population 
 	  
@@ -14,6 +16,7 @@
 	  #Query #DBpedia
 	- ![TwoPatternsSameSubject.svg](../assets/TwoPatternsSameSubject_1643114435930_0.svg){:height 279, :width 522}
 - ### Making another step in the graph
+  collapsed:: true
 	- ```sparql
 	  SELECT ?country ?population ?capital 
 	  
@@ -26,7 +29,8 @@
 	  ```
 	  #Query #DBpedia
 	- ![AnotherStepInTheGraph.svg](../assets/AnotherStepInTheGraph_1643114924911_0.svg){:height 373, :width 646}
-	- ```sparql
+	- collapsed:: true
+	  ```sparql
 	  PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 	  PREFIX skosxl: <http://www.w3.org/2008/05/skos-xl#>
 	  
@@ -42,6 +46,7 @@
 	  ```
 		- #VocBench #Query
 - ### Three patterns and two filters
+  collapsed:: true
 	- ```sparql
 	  SELECT ?country ?population ?capital 
 	  
@@ -59,6 +64,7 @@
 	  ```
 	  #Query #DBpedia #FILTER #LANG
 - ### Counting and Binding
+  collapsed:: true
 	- ```sparql
 	  SELECT (COUNT (?work_of_Agatha_Christie) AS ?Number_of_AC_works)
 	  
@@ -66,6 +72,7 @@
 	  ```
 	  #Query #COUNT
 - ### Functions on dates and times
+  collapsed:: true
 	- [[NOW]]()
 	- [[YEAR]]()
 	- [[MONTH]]()
@@ -74,13 +81,16 @@
 	- [[MINUTES]]()
 	- [[SECONDS]]()
 	- [[Example]]
+	  collapsed:: true
 		- ```sparql
 		  SELECT (MONTH(NOW()) AS ?currentMonth) { }
 		  
 		  ```
 		  #Query
 - ### Filtering resources with the same namespace
+  collapsed:: true
 	- Find all [[SKOS]] properties in use
+	  collapsed:: true
 		- ```sparql
 		  SELECT DISTINCT ?property
 		  WHERE {
@@ -90,6 +100,7 @@
 		  ```
 		  #Query #STRSTARTS
 - ### Negation
+  collapsed:: true
 	- `NOT EXISTS` - Testing for absence of a pattern (recommended in most cases)
 	- `MINUS`      -  Removing possible solutions
 	- `!BOUND`     -  Not bound (produces the same results as `NOT EXISTS` but works also for SPARQL 1.0)
@@ -111,6 +122,7 @@
 	  ```
 	  #Query #FILTER #[[NOT EXISTS]]
 - ### Optional results
+  collapsed:: true
 	- ```sparql
 	  SELECT DISTINCT ?leader ?spouse
 	  
@@ -124,6 +136,7 @@
 	  ```
 	  #Query #OPTIONAL
 - ### Combining results
+  collapsed:: true
 	- ```sparql
 	  SELECT DISTINCT  ?Influencer ?Influenced
 	  
@@ -143,6 +156,7 @@
 	  #+END_NOTE
 - ### Search for string patterns
   id:: 61fd3a3d-81b5-448d-a76f-d1b0008b7476
+  collapsed:: true
 	- ```sparql
 	  SELECT DISTINCT ?MusicalWork ?Artist
 	  
@@ -161,6 +175,7 @@
 	  ```
 	  #Query #REGEX #FILTER #LANG
 - ### Assembling strings
+  collapsed:: true
 	- ```sparql
 	  PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 	  
@@ -175,7 +190,9 @@
 	  ```
 	  #Query #IRI #CONCAT #Cellar
 - ### Property paths
+  collapsed:: true
 	- [[Syntax]]
+	  collapsed:: true
 		- ```sparql
 		  #Inverse Path:
 		      ^:property #Inverse path (object to subject)
@@ -192,6 +209,7 @@
 		  ```
 		- [Property paths from the SPARQL 1.1 spec](https://www.w3.org/TR/sparql11-query/#propertypaths)
 	- [[Example]]
+	  collapsed:: true
 		- ```sparql
 		  SELECT (COUNT (DISTINCT ?child) AS ?Number_of_children)
 		  
@@ -228,12 +246,16 @@
 		  #Query #DBpedia #| #^ #COUNT #UNION
 		-
 - ### Language tag
+  collapsed:: true
 	- The current best practice for language tags is defined in [RFC5646](https://www.rfc-editor.org/rfc/rfc5646.txt).
 	- [[LANGMATCHES]]
+	  collapsed:: true
 		- `FILTER (LANG(?label) = "fr")` will only return results where the language tag of `?label` is `@fr`, while `FILTER LANGMATCHES( LANG(?label), "fr" )` will also include those with regions such as `@fr-BE`.
 - ### Wikibase data mode
+  collapsed:: true
 	- ![image.png](../assets/image_1646977222963_0.png)
 - ### Wikidata label service
+  collapsed:: true
 	- Adding "Label" to a variable will get the label of the respective item if the Wikidata Label service is called in the query. For example, for ?item, ?itemLabel will get the labels in the selected language.
 	- ```sparql
 	  SELECT ?item ?itemLabel WHERE { ?item wdt:P31 wd:Q146 . 
@@ -254,9 +276,12 @@
 	  #Wikidata #Query #FILTER #&&
 - ### Properties for statements (Wikidata)
   id:: 600748be-0c7a-4b4c-807d-a5c41f8ee80e
+  collapsed:: true
 	- Item - Statement - Value - Qualifier Value
+	  collapsed:: true
 		- ![WikidataStatementPropertiesGeneric.svg](../assets/WikidataStatementPropertiesGeneric_1644054801681_0.svg)
 	- [[Example]]: US Presidents
+	  collapsed:: true
 		-
 		- ![WikidataStatementPropertiesUSpresident.svg](../assets/WikidataStatementPropertiesUSpresident_1644055097874_0.svg){:height 502, :width 680}
 		- With `?statement` variable <iframe src="https://w.wiki/4wNL" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe>
@@ -264,3 +289,22 @@
 		- With blank nodes <iframe  src="https://w.wiki/wsi" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe>
 		  #Query #Wikidata #Qualifiers
 	- See also ((61fe46bb-6fc5-4d5e-b917-d0da5b02a96a))
+- ### Providing list of input VALUES
+  collapsed:: true
+	- ```sparql
+	  # Example with a block of values, where the third block in the list has no value for ?v2
+	  VALUES (?v1 ?v2) {(:c11 :c21) (:c21 :c22) (:c21 UNDEF)}
+	  
+	  # When value for only one variable are provided, () can be omitted 
+	  VALUES ?v1 {:c1 :c2 :c3 :cN}
+	  
+	  ```
+	  #VALUES
+- ### Grouping results with GROUP_CONCAT
+  collapsed:: true
+	- ```sparql
+	  (GROUP_CONCAT (?V; SEPARATOR = ", ") AS ?groupV)
+	  
+	  ```
+	  #GROUP_CONCAT
+- ### Federated queries

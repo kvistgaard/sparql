@@ -6,11 +6,18 @@ public:: false
   :END:
 - TODO Add to [[SPARQL training course]], more on property paths etc (take from PDFs, it's lots in PPT)
 - TODO Test very big export
+- TODO Hide unlinked refs
+- TODO Start adding SPARQL tools like SPARQL Generate Traql and SPARQL anything
+	- separate pages with metadata
+	- stanartise with endpoints
+	- then create a query page, and that page should go to the content.
 - DONE Replace the favicon
 - DOING Add shortcuts to How to use this graph (ore separate page)
   :LOGBOOK:
   CLOCK: [2022-03-09 Wed 08:29:48]
   :END:
+- TODO All pages, first those included in Conent, should have description
+	- ![image.png](../assets/image_1647510415720_0.png)
 - TODO Fix issues with ((5601edec-7d0a-4be1-b12c-8357da7b0b94)) images
 	- open on the sidebar
 - DONE Consider showing 'All Pages'

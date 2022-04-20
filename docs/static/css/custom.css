@@ -5,4 +5,6 @@
 #left-sidebar .recent,
 #right-sidebar .cp__right-sidebar-settings div:last-child {
     display: none; }
-/* .references {    display: none; } */
+.flex-1.page.relative > div:last-of-type > div:last-of-type {
+     display: none;
+}

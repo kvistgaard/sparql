@@ -2,7 +2,7 @@
 - [[Example]]
   id:: 61e6cd78-f627-493f-ae7c-04ccf880ad1a
 	- ```sparql
-	  #get the list of notable books on linked data, semantic technologies, and semantic knowledge graphs. (issue: langauge of wdt:P2093)
+	  #title: Notable books on linked data, semantic technologies, and semantic knowledge graphs 
 	   
 	  SELECT DISTINCT ?book ?title (GROUP_CONCAT (DISTINCT ?author; SEPARATOR = ", ") AS ?authors) ?pubDate
 	  {
@@ -12,7 +12,6 @@
 	           OPTIONAL {?book (wdt:P50/rdfs:label)|(wdt:P98/rdfs:label)|wdt:P2093 ?author
 	                     FILTER (LANG(?author)=""||LANG(?author)="en")}
 	           OPTIONAL {?book wdt:P577 ?pubDate}
-	   
 	  
 	  }
 	  GROUP BY ?book ?title ?pubDate

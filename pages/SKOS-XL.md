@@ -14,6 +14,7 @@
 	- **skosxl:Label**
 - ## Properties
 	- ### Annotation properties
+	  collapsed:: true
 		- rdfs:label
 			- skos:prefLabel
 			- skos:altLabel
@@ -26,6 +27,7 @@
 			- skos:historyNote
 			- skos:scopeNote
 	- ### Object properties
+	  collapsed:: true
 		- skos:hasTopConcept
 		- skos:inScheme
 		- skos:member

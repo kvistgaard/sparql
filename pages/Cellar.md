@@ -54,4 +54,4 @@ date:: [[Feb 2nd, 2022]]
 		  ORDER BY DESC(?Number_of_laws)
 		  
 		  ```
-		  #Query #FILTER #LANG #[[GROUP BY]] #[[ORDER BY]] #DESC
+		  #Query #FILTER #LANG #[[ORDER BY]] #[[GROUP BY]] #[[ORDER BY]] #DESC

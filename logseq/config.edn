@@ -196,4 +196,5 @@
  ;; :editor/extra-codemirror-options {:keyMap "emacs" :lineWrapping true}
  :editor/extra-codemirror-options   {:theme "default"}
  :graph/settings {:builtin-pages? true}
+ :feature/enable-flashcards? false
  }

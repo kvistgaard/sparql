@@ -1,0 +1,8 @@
+@import url('https://cdn.jsdelivr.net/gh/sansui233/logseq-bonofix-theme/custom.css');
+#head .ui__dropdown-trigger,
+#left-sidebar .flashcards-nav,
+#left-sidebar .favorites,
+#left-sidebar .recent,
+#right-sidebar .cp__right-sidebar-settings div:last-child {
+    display: none; }
+/* .references {    display: none; } */

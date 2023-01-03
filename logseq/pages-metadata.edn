@@ -19,6 +19,12 @@
  {:block/name "c",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
+ {:block/name "canceled",
+  :block/created-at 1659106381481,
+  :block/updated-at 1659106381481}
+ {:block/name "cancelled",
+  :block/created-at 1659106381481,
+  :block/updated-at 1659106381481}
  {:block/name "card",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
@@ -27,19 +33,22 @@
   :block/updated-at 1644338376883}
  {:block/name "cellar",
   :block/created-at 1643211399047,
-  :block/updated-at 1644664740078}
+  :block/updated-at 1666013168011}
  {:block/name "class diagram",
   :block/created-at 1644389164843,
   :block/updated-at 1644389164843}
  {:block/name "concat",
   :block/created-at 1643817153436,
   :block/updated-at 1643818675370}
+ {:block/name "construct",
+  :block/created-at 1650624250973,
+  :block/updated-at 1650624250973}
  {:block/name "contents",
   :block/created-at 1642507403409,
   :block/updated-at 1644824643145}
  {:block/name "count",
   :block/created-at 1647004556772,
-  :block/updated-at 1647004556772}
+  :block/updated-at 1647864819724}
  {:block/name "covid-19",
   :block/created-at 1644389164844,
   :block/updated-at 1644389164844}
@@ -72,13 +81,19 @@
   :block/updated-at 1644389164844}
  {:block/name "eu knowledge graph",
   :block/created-at 1643211399048,
-  :block/updated-at 1643211399048}
+  :block/updated-at 1648032466244}
  {:block/name "eurovoc",
   :block/created-at 1647004556772,
   :block/updated-at 1647004556772}
  {:block/name "example",
   :block/created-at 1642515832242,
   :block/updated-at 1642515832242}
+ {:block/name "exercisesolutions",
+  :block/created-at 1654779868066,
+  :block/updated-at 1654779868066}
+ {:block/name "exercisesolutions/sparqlbook",
+  :block/created-at 1654779868065,
+  :block/updated-at 1654779868065}
  {:block/name "exploratory queries",
   :block/created-at 1643821003386,
   :block/updated-at 1644664999850}
@@ -106,15 +121,15 @@
  {:block/name "function",
   :block/created-at 1644389164843,
   :block/updated-at 1644389164843}
+ {:block/name "function/aggregate function",
+  :block/created-at 1647864771527,
+  :block/updated-at 1647864771527}
  {:block/name "function/on rdf terms",
   :block/created-at 1644389164843,
   :block/updated-at 1644389164843}
  {:block/name "function/on strings",
   :block/created-at 1644389164844,
   :block/updated-at 1644389164844}
- {:block/name "function/set function",
-  :block/created-at 1644389164843,
-  :block/updated-at 1644389164843}
  {:block/name "graph",
   :block/created-at 1647004556772,
   :block/updated-at 1647004556772}
@@ -130,7 +145,7 @@
  {:block/name "hours",
   :block/created-at 1644389164840,
   :block/updated-at 1644389164840}
- {:block/name "how to use this graph",
+ {:block/name "how to use this graph?",
   :block/created-at 1643211399048,
   :block/updated-at 1644072559363}
  {:block/name "in-progress",
@@ -161,10 +176,17 @@
   "mailto_ivaylo.velitchkov@ext.ec.europa.eu_subject=question_2ffeedback_20on_20the_20wiki_20_22sparql_20knowledge_20graph_22",
   :block/created-at 1643211399047,
   :block/updated-at 1643647926719}
+ {:block/name "mailto_ivo@velitchkov",
+  :block/created-at 1651394898670,
+  :block/updated-at 1651394898670}
  {:block/name
   "mailto_ivo@velitchkov.eu_subject=question_2ffeedback_20on_20the_20wiki_20_22sparql_20knowledge_20graph_22",
   :block/created-at 1647004556772,
-  :block/updated-at 1647004556772}
+  :block/updated-at 1647515322208}
+ {:block/name
+  "mailto_ivo@velitchkov/eu_subject=question_2ffeedback_20on_20the_20wiki_20_22sparql_20knowledge_20graph_22",
+  :block/created-at 1651394898669,
+  :block/updated-at 1651394898669}
  {:block/name "minutes",
   :block/created-at 1644389164844,
   :block/updated-at 1644389164844}
@@ -201,12 +223,6 @@
  {:block/name "oxigraph",
   :block/created-at 1647004556772,
   :block/updated-at 1647004556772}
- {:block/name "personal",
-  :block/created-at 1647415661722,
-  :block/updated-at 1647415661722}
- {:block/name "pkg book - cfp",
-  :block/created-at 1647328966757,
-  :block/updated-at 1647328966757}
  {:block/name "prefixes",
   :block/created-at 1644389164840,
   :block/updated-at 1644389164840}
@@ -230,10 +246,10 @@
   :block/updated-at 1644389164844}
  {:block/name "regex",
   :block/created-at 1643986035152,
-  :block/updated-at 1643987588088}
+  :block/updated-at 1650560510549}
  {:block/name "sample",
   :block/created-at 1643983727457,
-  :block/updated-at 1643983727457}
+  :block/updated-at 1647864849112}
  {:block/name "seconds",
   :block/created-at 1644389164843,
   :block/updated-at 1644389164843}
@@ -248,7 +264,7 @@
   :block/updated-at 1644054275472}
  {:block/name "sparql editors",
   :block/created-at 1644767394392,
-  :block/updated-at 1644767427385}
+  :block/updated-at 1652017084926}
  {:block/name "sparql endpoint",
   :block/created-at 1644389164843,
   :block/updated-at 1644389164843}
@@ -260,13 +276,13 @@
   :block/updated-at 1645253696137}
  {:block/name "sparql knowledge graph",
   :block/created-at 1643211399047,
-  :block/updated-at 1646902383134}
+  :block/updated-at 1653726117344}
  {:block/name "sparql syntax",
   :block/created-at 1642503371267,
   :block/updated-at 1643977357688}
  {:block/name "sparql training course",
   :block/created-at 1643211399047,
-  :block/updated-at 1644770192734}
+  :block/updated-at 1656001819348}
  {:block/name "specification",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
@@ -282,6 +298,9 @@
  {:block/name "substr",
   :block/created-at 1643649636355,
   :block/updated-at 1643649645833}
+ {:block/name "sum",
+  :block/created-at 1648031340434,
+  :block/updated-at 1648031432499}
  {:block/name "syntax",
   :block/created-at 1642515832242,
   :block/updated-at 1642515832242}
@@ -291,6 +310,9 @@
  {:block/name "todo",
   :block/created-at 1642507403409,
   :block/updated-at 1642507403409}
+ {:block/name "triply",
+  :block/created-at 1647514790207,
+  :block/updated-at 1647514790207}
  {:block/name "turtle",
   :block/created-at 1643090554988,
   :block/updated-at 1643091528610}
@@ -305,13 +327,16 @@
   :block/updated-at 1644389164843}
  {:block/name "values",
   :block/created-at 1642515118536,
-  :block/updated-at 1643818647932}
+  :block/updated-at 1651564910698}
  {:block/name "variables",
   :block/created-at 1645253696138,
   :block/updated-at 1645253696138}
+ {:block/name "video",
+  :block/created-at 1647514790206,
+  :block/updated-at 1647514790206}
  {:block/name "vocbench",
   :block/created-at 1643708479679,
-  :block/updated-at 1643819371896}
+  :block/updated-at 1648710267325}
  {:block/name "vscode extension",
   :block/created-at 1645253696137,
   :block/updated-at 1646807522281}
@@ -332,4 +357,4 @@
   :block/updated-at 1644389164840}
  {:block/name "⚒ work page",
   :block/created-at 1643211399047, 
-  :block/updated-at 1644144910537}]
+  :block/updated-at 1656088694027}]

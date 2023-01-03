@@ -1,5 +1,5 @@
 - [VocBench: SPARQL](http://vocbench.uniroma2.it/doc/user/sparql.jsf) #Documentation
-- Queries can be stored in VocBencjaccording to the following patterns:
+- Queries can be stored in VocBench according to the following patterns:
 	- USER – specific for the user, on all projects)
 	- PROJECT – specific for the project, on all users of that project
 	- PROJECT_USER –  specific to the user and only for that project

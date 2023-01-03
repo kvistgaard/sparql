@@ -1,10 +1,11 @@
 - All important points from the training course, collected for quick reference. See also [[Tutorial]]s.
 - ### SPARQL Interactions
-  collapsed:: true
+  id:: 626e4952-02cc-4c88-8565-139a93e6a98a
 	- ![SPARQLinteractions.svg](../assets/SPARQLinteractions_1643113721643_0.svg){:height 304, :width 746}
 	- See [[SPARQL Editors]]
 - ### Two triple patterns, same subject
   collapsed:: true
+  id:: 626e4952-6ffd-494a-bbbf-122685d3d4f7
 	- ```sparql
 	  SELECT ?country ?capital ?population 
 	  
@@ -17,6 +18,7 @@
 	- ![TwoPatternsSameSubject.svg](../assets/TwoPatternsSameSubject_1643114435930_0.svg){:height 279, :width 522}
 - ### Making another step in the graph
   collapsed:: true
+  id:: 626e4952-98ae-4115-93de-d9fd4156978c
 	- ```sparql
 	  SELECT ?country ?population ?capital 
 	  
@@ -47,6 +49,7 @@
 		- #VocBench #Query
 - ### Three patterns and two filters
   collapsed:: true
+  id:: 626e4952-606b-45fe-8878-dfe4871a59fc
 	- ```sparql
 	  SELECT ?country ?population ?capital 
 	  
@@ -65,6 +68,7 @@
 	  #Query #DBpedia #FILTER #LANG
 - ### Counting and Binding
   collapsed:: true
+  id:: 626e4952-dd36-4931-abc1-98e40bb1da76
 	- ```sparql
 	  SELECT (COUNT (?work_of_Agatha_Christie) AS ?Number_of_AC_works)
 	  
@@ -73,6 +77,7 @@
 	  #Query #COUNT
 - ### Functions on dates and times
   collapsed:: true
+  id:: 626e4952-30dc-4bce-804c-fee5318b8244
 	- [[NOW]]()
 	- [[YEAR]]()
 	- [[MONTH]]()
@@ -89,6 +94,7 @@
 		  #Query
 - ### Filtering resources with the same namespace
   collapsed:: true
+  id:: 626e4952-f335-485a-b3ae-474fb7777046
 	- Find all [[SKOS]] properties in use
 	  collapsed:: true
 		- ```sparql
@@ -101,6 +107,7 @@
 		  #Query #STRSTARTS
 - ### Negation
   collapsed:: true
+  id:: 626e4952-7079-4ddb-a19d-72eb4dc7cca2
 	- `NOT EXISTS` - Testing for absence of a pattern (recommended in most cases)
 	- `MINUS`      -  Removing possible solutions
 	- `!BOUND`     -  Not bound (produces the same results as `NOT EXISTS` but works also for SPARQL 1.0)
@@ -123,6 +130,7 @@
 	  #Query #FILTER #[[NOT EXISTS]]
 - ### Optional results
   collapsed:: true
+  id:: 626e4952-6483-438f-9a57-c210fdd6988a
 	- ```sparql
 	  SELECT DISTINCT ?leader ?spouse
 	  
@@ -137,6 +145,7 @@
 	  #Query #OPTIONAL
 - ### Combining results
   collapsed:: true
+  id:: 626e4952-211a-4446-b227-873a647fe005
 	- ```sparql
 	  SELECT DISTINCT  ?Influencer ?Influenced
 	  
@@ -176,6 +185,7 @@
 	  #Query #REGEX #FILTER #LANG
 - ### Assembling strings
   collapsed:: true
+  id:: 626e4952-d6a2-41d0-9766-10286789ae0c
 	- ```sparql
 	  PREFIX cdm: <http://publications.europa.eu/ontology/cdm#>
 	  
@@ -191,6 +201,7 @@
 	  #Query #IRI #CONCAT #Cellar
 - ### Property paths
   collapsed:: true
+  id:: 626e4952-c45c-4911-bda6-6c93293dbe9e
 	- [[Syntax]]
 	  collapsed:: true
 		- ```sparql
@@ -247,15 +258,18 @@
 		-
 - ### Language tag
   collapsed:: true
+  id:: 626e4952-9418-419f-918a-47f28f524f66
 	- The current best practice for language tags is defined in [RFC5646](https://www.rfc-editor.org/rfc/rfc5646.txt).
 	- [[LANGMATCHES]]
 	  collapsed:: true
 		- `FILTER (LANG(?label) = "fr")` will only return results where the language tag of `?label` is `@fr`, while `FILTER LANGMATCHES( LANG(?label), "fr" )` will also include those with regions such as `@fr-BE`.
-- ### Wikibase data mode
+- ### Wikibase data model
   collapsed:: true
+  id:: 626e4952-c934-4fa9-a7e1-eb3803156299
 	- ![image.png](../assets/image_1646977222963_0.png)
 - ### Wikidata label service
   collapsed:: true
+  id:: 626e4952-5283-4052-a77e-c12132783160
 	- Adding "Label" to a variable will get the label of the respective item if the Wikidata Label service is called in the query. For example, for ?item, ?itemLabel will get the labels in the selected language.
 	- ```sparql
 	  SELECT ?item ?itemLabel WHERE { ?item wdt:P31 wd:Q146 . 
@@ -272,6 +286,7 @@
 	  #+END_TIP
 - ### Wikidata Language and visualization service
   collapsed:: true
+  id:: 626e4952-d248-4ef9-8f71-5b0cb5a0f824
 	- Influence graph in the age of Enlightenment <iframe src="https://w.wiki/4oDD" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe>
 	  #Wikidata #Query #FILTER #&&
 - ### Properties for statements (Wikidata)
@@ -291,6 +306,7 @@
 	- See also ((61fe46bb-6fc5-4d5e-b917-d0da5b02a96a))
 - ### Providing list of input VALUES
   collapsed:: true
+  id:: 626e4952-8b32-4fc4-b3a2-6e24c7824ada
 	- ```sparql
 	  # Example with a block of values, where the third block in the list has no value for ?v2
 	  VALUES (?v1 ?v2) {(:c11 :c21) (:c21 :c22) (:c21 UNDEF)}
@@ -300,11 +316,70 @@
 	  
 	  ```
 	  #VALUES
+	- Get the list of notable books on linked data, semantic technologies, and semantic knowledge graphs.
+		- <iframe src="https://w.wiki/4yao" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe>
 - ### Grouping results with GROUP_CONCAT
   collapsed:: true
+  id:: 626e4952-ad6c-4838-bab3-c76ce434120a
 	- ```sparql
 	  (GROUP_CONCAT (?V; SEPARATOR = ", ") AS ?groupV)
 	  
 	  ```
 	  #GROUP_CONCAT
 - ### Federated queries
+  collapsed:: true
+  id:: 626e4952-1bba-4499-b273-3034b07779b4
+	- ![FederatedQueries.svg](../assets/FederatedQueries_1650444816370_0.svg){:height 500, :width 643}
+- ### Default and named graphs
+  id:: 626e4952-3b13-47d8-a7e4-ad95ca6b68e2
+  collapsed:: true
+	- ![DefaultAndNamedGraph.svg](../assets/DefaultAndNamedGraph_1650444948710_0.svg){:height 454, :width 498}
+	- Default graph
+	  `FROM <>`
+	  Used when not explicitly specified
+	- Named graph
+	  `FROM NAMED <>`
+	  Can be directly specified or through a variable
+	- Available named graphs at an endpoint
+		- ```sparql
+		  SELECT DISTINCT ?g 
+		   WHERE { 
+		      GRAPH ?g {?s ?p ?o .} 
+		   } 
+		  ```
+		  #Query #GRAPH
+- ### Other query forms
+  id:: 626e4952-fb6b-4afc-8dac-d0bec45a3a8e
+  collapsed:: true
+	- ASK
+		- If there is at least one result
+			- `ASK WHERE {...}`
+	- DESCRIBE
+		- Describes a particular resource
+		- All directly linked nodes
+		- Not strictly specified
+	- [[CONSTRUCT]]
+		- Create new graph from a template
+		- Use SPARQL as template to
+			- Copy
+			- Create
+			- Convert
+				- From RDF to RDF
+					- Applying different ontologies
+					- Generating URIs
+				- From CSV to RDF (e.g. using [Tarql](http://tarql.github.io))
+		- Result
+			- Triples (virtual graph)
+		- [[Example]]
+			- SKOS from SKOS-XL
+				- ```sparql
+				  CONSTRUCT {
+				      ?concept skos:prefLabel ?prefLabel_ES .}
+				  
+				  WHERE {
+				  ?concept skosxl:prefLabel ?prefLabel .
+				  ?prefLabel skosxl:literalForm ?prefLabel_ES .
+				  FILTER (LANG(?prefLabel_ES) = "es")
+				  }
+				  ```
+				  #Query #CONSTRUCT #FILTER #LANG

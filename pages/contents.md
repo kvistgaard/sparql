@@ -1,4 +1,4 @@
-- [[How to use this graph]]
+- [[How to use this graph?]]
 - [[SPARQL training course]]
 - [[SPARQL Syntax]]
 - [[SPARQL Endpoints]]

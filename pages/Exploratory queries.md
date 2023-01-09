@@ -46,7 +46,7 @@
 	  #Query #COUNT #GRAPH #UNION
 - Sample entity and count
 	- ```sparql
-	  SELECT SAMPLE(?s) as ?sample count(?s) as ?count ?class
+	  SELECT (SAMPLE(?s) as ?sample) (count(?s) as ?count) ?class
 	  
 	  WHERE {?s a ?class }
 	  

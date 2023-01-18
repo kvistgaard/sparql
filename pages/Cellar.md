@@ -34,6 +34,7 @@ date:: [[Feb 2nd, 2022]]
 		  ```
 		  #Query #IRI #CONCAT #STR #FILTER
 	- African countries with number of EU laws related to them
+	  collapsed:: true
 		- ```sparql
 		  #African countries with number of EU laws related to them
 		  
@@ -55,3 +56,45 @@ date:: [[Feb 2nd, 2022]]
 		  
 		  ```
 		  #Query #FILTER #LANG #[[ORDER BY]] #[[GROUP BY]] #[[ORDER BY]] #DESC
+	- Who-is-who data for a person, based on family name
+	  collapsed:: true
+		- ```sparql
+		  PREFIX cdm: <http://publications.europa.eu/ontology/cdm#> 
+		  PREFIX skos: <http://www.w3.org/2004/02/skos/core#> 
+		  PREFIX foaf: <http://xmlns.com/foaf/0.1/> 
+		  PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+		  PREFIX euvoc: <http://publications.europa.eu/ontology/euvoc#> 
+		  PREFIX org: <http://www.w3.org/ns/org#> 
+		  PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+		  PREFIX person: <http://publications.europa.eu/resource/person>
+		  
+		  SELECT DISTINCT ?person ?hasMembership ?org ?prefLabel ?familyName ?givenName ?citizenship ?img ?hasHonorificPrefix ?role
+		  ?prefLabelRole ?positionComplement ?homepage ?hasEmail ?tel
+		  WHERE {
+		      ?person rdf:type foaf:Person.
+		      ?person org:hasMembership ?hasMembership.
+		      FILTER(STR(?familyName)= 'VON DER LEYEN').
+		      OPTIONAL {?hasMembership org:organization ?org .
+		                ?person foaf:familyName ?familyName. 
+		          OPTIONAL {?org skos:prefLabel ?prefLabel. FILTER(LANGMATCHES(LANG(?prefLabel),"en"))}
+		          OPTIONAL {?person foaf:givenName ?givenName.}
+		          OPTIONAL {?person person:citizenship ?citizenship.}
+		          OPTIONAL {?person foaf:img ?img}
+		          OPTIONAL {?person vcard:hasHonorificPrefix ?hasHonorificPrefix.}
+		          OPTIONAL {?hasMembership org:role ?role. ?role skos:prefLabel ?prefLabelRole. 
+		                    FILTER(LANGMATCHES(LANG(?prefLabelRole),"en"))}
+		          OPTIONAL {?hasMembership euvoc:positionComplement ?positionComplement. 
+		                    FILTER(LANGMATCHES(LANG(?positionComplement),"en"))}
+		          OPTIONAL {?hasMembership euvoc:contactPoint ?contactPoint.
+		              OPTIONAL {?contactPoint vcard:hasAddress ?hasAddress 
+		                  OPTIONAL {?contactPoint foaf:homepage ?homepage}
+		                  OPTIONAL {?contactPoint vcard:hasEmail ?hasEmail} 
+		                  OPTIONAL {?contactPoint vcard:hasTelephone ?hasTelephone.
+		                              ?hasTelephone vcard:hasValue ?tel.}
+		                         }
+		                  } 
+		              } 
+		      }
+		  ```
+		  #Query #OPTIONAL #LANGMATCHES
+	- More examples available [here](https://docs.google.com/presentation/d/1oGZjnkFemOuiitf5xAi7VeDxK8_3rm1O/edit#slide=id.p1).

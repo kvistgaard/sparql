@@ -4,7 +4,6 @@
 	- ![SPARQLinteractions.svg](../assets/SPARQLinteractions_1643113721643_0.svg){:height 304, :width 746}
 	- See [[SPARQL Editors]]
 - ### Two triple patterns, same subject
-  collapsed:: true
   id:: 626e4952-6ffd-494a-bbbf-122685d3d4f7
 	- ```sparql
 	  SELECT ?country ?capital ?population 
@@ -17,7 +16,6 @@
 	  #Query #DBpedia
 	- ![TwoPatternsSameSubject.svg](../assets/TwoPatternsSameSubject_1643114435930_0.svg){:height 279, :width 522}
 - ### Making another step in the graph
-  collapsed:: true
   id:: 626e4952-98ae-4115-93de-d9fd4156978c
 	- ```sparql
 	  SELECT ?country ?population ?capital 
@@ -93,10 +91,8 @@
 		  ```
 		  #Query
 - ### Filtering resources with the same namespace
-  collapsed:: true
   id:: 626e4952-f335-485a-b3ae-474fb7777046
 	- Find all [[SKOS]] properties in use
-	  collapsed:: true
 		- ```sparql
 		  SELECT DISTINCT ?property
 		  WHERE {
@@ -105,6 +101,16 @@
 		  }
 		  ```
 		  #Query #STRSTARTS
+	- Find all classes of things that have author DBpedia
+		- ```sparql
+		  SELECT DISTINCT ?class
+		  WHERE {
+		    ?work dbo:author ?author . 
+		    ?work a ?class .
+		  FILTER (STRSTARTS(STR(?class),"http://dbpedia.org/ontology/" ))  
+		  }
+		  ```
+		  #Query #STRSTARTS #DBpedia
 - ### Negation
   collapsed:: true
   id:: 626e4952-7079-4ddb-a19d-72eb4dc7cca2
@@ -284,11 +290,13 @@
 	  
 	  Check the [Label service manual](https://www.mediawiki.org/wiki/Wikidata_Query_Service/User_Manual#Label_service) for other capabilities. 
 	  #+END_TIP
-- ### Wikidata Language and visualization service
-  collapsed:: true
+- ### Wikidata visualization service
   id:: 626e4952-d248-4ef9-8f71-5b0cb5a0f824
-	- Influence graph in the age of Enlightenment <iframe src="https://w.wiki/4oDD" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe>
-	  #Wikidata #Query #FILTER #&&
+	- Influence graph in the age of Enlightenment
+		- <iframe src="https://w.wiki/4oDD" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe>
+		  #Wikidata #Query #FILTER #&&
+	- Roman diaties
+		- <iframe src="https://w.wiki/5BLU" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe> #| #^ #Wikidata #Query
 - ### Properties for statements (Wikidata)
   id:: 600748be-0c7a-4b4c-807d-a5c41f8ee80e
   collapsed:: true
@@ -319,13 +327,13 @@
 	- Get the list of notable books on linked data, semantic technologies, and semantic knowledge graphs.
 		- <iframe src="https://w.wiki/4yao" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe>
 - ### Grouping results with GROUP_CONCAT
-  collapsed:: true
   id:: 626e4952-ad6c-4838-bab3-c76ce434120a
 	- ```sparql
 	  (GROUP_CONCAT (?V; SEPARATOR = ", ") AS ?groupV)
 	  
 	  ```
 	  #GROUP_CONCAT
+	- <iframe src="https://w.wiki/6EZa" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe> #Wikidata #Query #GROUP_CONCAT #|| #OPTIONAL
 - ### Federated queries
   collapsed:: true
   id:: 626e4952-1bba-4499-b273-3034b07779b4

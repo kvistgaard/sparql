@@ -2,11 +2,11 @@
 - [[Example]]
   id:: 61e6cd78-f627-493f-ae7c-04ccf880ad1a
 	- ```sparql
-	  #title: Notable books on linked data, semantic technologies, and semantic knowledge graphs 
+	  #title: Notable books on linked data, semantic technologies, and semantic knowledge graphs
 	   
 	  SELECT DISTINCT ?book ?title (GROUP_CONCAT (DISTINCT ?author; SEPARATOR = ", ") AS ?authors) ?pubDate
 	  {
-	    VALUES ?book {wd:Q17744504 wd:Q17744476 wd:Q61718117 wd:Q59784970 wd:Q17744339 wd:Q51601248 wd:Q17744488 wd:Q27942623  wd:Q108378522 wd:Q110549106}
+	    VALUES ?book {wd:Q17744504 wd:Q17744476 wd:Q61718117 wd:Q59784970 wd:Q17744339 wd:Q51601248 wd:Q17744488 wd:Q27942623  wd:Q108378522 wd:Q110549106 wd:Q109673922 wd:Q93431614}
 	           
 	           ?book wdt:P1476 ?title.
 	           OPTIONAL {?book (wdt:P50/rdfs:label)|(wdt:P98/rdfs:label)|wdt:P2093 ?author
@@ -16,7 +16,7 @@
 	  }
 	  GROUP BY ?book ?title ?pubDate
 	  ```
-	  #Wikidata #Query
+	  #Wikidata #Query #II #OPTIONAL
 - Allows multiple variables
 - [[Syntax]]
 	- ```sparql

@@ -1,18 +1,22 @@
-- type:: [[Ontology]]
+type:: [[Ontology]]
+
 - The specification of SKOS-XL is available as a [separate document](https://www.w3.org/TR/skos-reference/skos-xl.html) and as a [section within the SKOS specification](https://www.w3.org/TR/skos-reference/#xl).
 - This page describes the resulting extended ontology SKOS + SKOS-XL which is what in practice is referred to as SKOS-XL.
 - ## [[Class Diagram]]
+  collapsed:: true
 	- ![image.png](../assets/SKOS-XLdiagram.png){:height 628, :width 746}
 		- #+BEGIN_NOTE
 		  Doesn't show all object properties and none of the annotation properties. See the complete class and property hierarchies below.
 		  #+END_NOTE
 - ## Classes
+  collapsed:: true
 	- skos:Collection
 		- skos:OrderedCollection
 	- skos:Concept
 	- skos:ConceptScheme
 	- **skosxl:Label**
 - ## Properties
+  collapsed:: true
 	- ### Annotation properties
 	  collapsed:: true
 		- rdfs:label

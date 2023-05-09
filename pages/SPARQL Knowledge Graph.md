@@ -2,3 +2,6 @@
 - This is a knowledge graph about [[SPARQL]]. It contains a summary page of a [[SPARQL training course]], links to [tutorials]([[Tutorial]]) and video lectures, specifications, [endpoints]([[SPARQL Endpoints]]), explanations of SPARQL keywords and functions, syntax, [query examples]([[Query]]) and many other resources. The graph will grow based on the knowledge captured from training sessions, support chats, and [feedback](mailto:ivo@velitchkov.eu?subject=Question%2FFeedback%20on%20the%20wiki%20%22SPARQL%20Knowledge%20Graph%22).
 - This knowledge graph has special features for content use and exploration not available in traditional wikis. You can use it intuitively, or you may check these [tips]([[How to use this graph?]]) first.
 - {{embed [[Contents]] }}
+- Related wikis on semantic technologies: [SHACL Wiki](https://kvistgaard.github.io/shacl/)
+-
+- Created by [[Ivo Velitchkov]].

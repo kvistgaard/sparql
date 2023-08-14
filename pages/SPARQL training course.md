@@ -92,6 +92,7 @@
 		  #Query
 - ### Filtering resources with the same namespace
   id:: 626e4952-f335-485a-b3ae-474fb7777046
+  collapsed:: true
 	- Find all [[SKOS]] properties in use
 		- ```sparql
 		  SELECT DISTINCT ?property
@@ -292,6 +293,7 @@
 	  #+END_TIP
 - ### Wikidata visualization service
   id:: 626e4952-d248-4ef9-8f71-5b0cb5a0f824
+  collapsed:: true
 	- Influence graph in the age of Enlightenment
 		- <iframe src="https://w.wiki/4oDD" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe>
 		  #Wikidata #Query #FILTER #&&
@@ -299,12 +301,9 @@
 		- <iframe src="https://w.wiki/5BLU" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe> #| #^ #Wikidata #Query
 - ### Properties for statements (Wikidata)
   id:: 600748be-0c7a-4b4c-807d-a5c41f8ee80e
-  collapsed:: true
 	- Item - Statement - Value - Qualifier Value
-	  collapsed:: true
-		- ![WikidataStatementPropertiesGeneric.svg](../assets/WikidataStatementPropertiesGeneric_1644054801681_0.svg)
+		- ![WikidataStatementPropertiesGeneric.svg](../assets/WikidataStatementPropertiesGeneric_1644054801681_0.svg) #Wikidata
 	- [[Example]]: US Presidents
-	  collapsed:: true
 		-
 		- ![WikidataStatementPropertiesUSpresident.svg](../assets/WikidataStatementPropertiesUSpresident_1644055097874_0.svg){:height 502, :width 680}
 		- With `?statement` variable <iframe src="https://w.wiki/4wNL" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe>

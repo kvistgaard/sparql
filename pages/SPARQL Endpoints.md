@@ -1,4 +1,4 @@
-- ### SPARQL Endpoints used in the SPARQL training course
+### SPARQL Endpoints used in the SPARQL training course
 	- |Name|Endpoint URL|
 	  |--|--|
 	  |[[DBpedia]]|https://dbpedia.org/sparql|
@@ -8,6 +8,6 @@
 	  |[[Open Data Portal]]|https://data.europa.eu/sparql – [enhanced editor](https://data.europa.eu/data/sparql)|
 	  |[[EC Data Platform]]|https://test-linked.ec-dataplatform.eu/sparql (test server)|
 - ### Other SPARQL Endpoints
-	- [LOD Endpoints - LCD Space](https://webgate.ec.europa.eu/fpfis/wikis/display/DataCollab/LOD+Endpoints)
+	- [This query](https://tinyurl.com/2e8z6y5e) will retrieve a collection of over 200 open SPARQL endpoints
 - ---
-- See also [[SPARQL Editors]]
+- See also [[SPARQL Tools]]

@@ -1,10 +1,12 @@
 - All important points from the training course, collected for quick reference. See also [[Tutorial]]s.
 - ### SPARQL Interactions
   id:: 626e4952-02cc-4c88-8565-139a93e6a98a
+  collapsed:: true
 	- ![SPARQLinteractions.svg](../assets/SPARQLinteractions_1643113721643_0.svg){:height 304, :width 746}
-	- See [[SPARQL Editors]]
+	- See [[SPARQL Tools]]
 - ### Two triple patterns, same subject
   id:: 626e4952-6ffd-494a-bbbf-122685d3d4f7
+  collapsed:: true
 	- ```sparql
 	  SELECT ?country ?capital ?population 
 	  
@@ -17,6 +19,7 @@
 	- ![TwoPatternsSameSubject.svg](../assets/TwoPatternsSameSubject_1643114435930_0.svg){:height 279, :width 522}
 - ### Making another step in the graph
   id:: 626e4952-98ae-4115-93de-d9fd4156978c
+  collapsed:: true
 	- ```sparql
 	  SELECT ?country ?population ?capital 
 	  
@@ -207,10 +210,8 @@
 	  ```
 	  #Query #IRI #CONCAT #Cellar
 - ### Property paths
-  collapsed:: true
   id:: 626e4952-c45c-4911-bda6-6c93293dbe9e
 	- [[Syntax]]
-	  collapsed:: true
 		- ```sparql
 		  #Inverse Path:
 		      ^:property #Inverse path (object to subject)

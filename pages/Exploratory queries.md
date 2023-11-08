@@ -26,24 +26,37 @@
 - All triples
 	- Asking for all triples makes sense when you know that the dataset is small.
 	- Most triple stores will give all accessible data with `SELECT * {?s ?p ?o}` but some my give only the triples in the default graph so it's better to ask explicitly for all the triples in all named graphs.
-	- ```sparql
-	  SELECT ?g ?s ?p ?o
-	  WHERE
-	  {
-	  	{ ?s ?p ?o }
-	  	UNION
-	  	{ GRAPH ?g { ?s ?p ?o } }
-	  }
-	  ```#Query #GRAPH #UNION
+		- ```sparql
+		  SELECT ?g ?s ?p ?o
+		  WHERE
+		  {
+		  	{ ?s ?p ?o }
+		  	UNION
+		  	{ GRAPH ?g { ?s ?p ?o } }
+		  }
+		  ```#Query #GRAPH #UNION
 	- Total number of triples (from all graphs)
-	- ```sparql
-	  SELECT (COUNT (?s) as ?Number_of_triples)
-	  
-	  {
-	     { ?s ?p ?o } UNION { GRAPH ?g { ?s ?p ?o } }
-	  }
-	  ```
-	  #Query #COUNT #GRAPH #UNION
+		- ```sparql
+		  SELECT (COUNT (?s) as ?Number_of_triples)
+		  
+		  {
+		     { ?s ?p ?o } UNION { GRAPH ?g { ?s ?p ?o } }
+		  }
+		  ```
+		  #Query #COUNT #GRAPH #UNION
+	- Total number of triples (from all graphs) per graph
+		- ```sparql
+		  SELECT ?g (COUNT (?s) as ?Number_of_triples)
+		  
+		  
+		  {
+		     { ?s ?p ?o } UNION { GRAPH ?g { ?s ?p ?o } }
+		  }
+		  
+		  ORDER BY DESC (?Number_of_triples)
+		  
+		  ```
+		  #Query #COUNT #GRAPH #UNION
 - Sample entity and count
 	- ```sparql
 	  SELECT (SAMPLE(?s) as ?sample) (count(?s) as ?count) ?class

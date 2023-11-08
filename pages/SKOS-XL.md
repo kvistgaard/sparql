@@ -2,7 +2,14 @@ type:: [[Ontology]]
 
 - The specification of SKOS-XL is available as a [separate document](https://www.w3.org/TR/skos-reference/skos-xl.html) and as a [section within the SKOS specification](https://www.w3.org/TR/skos-reference/#xl).
 - This page describes the resulting extended ontology SKOS + SKOS-XL which is what in practice is referred to as SKOS-XL.
-- ## [[Class Diagram]]
+- ## Prefixes
+  collapsed:: true
+	- ```sparql
+	  # SKOS prefixes in the form used in SPARQL 
+	  PREFIX skos:   <http://www.w3.org/2004/02/skos/core#>
+	  PREFIX skosxl: <http://www.w3.org/2008/05/skos-xl#>
+	  ```
+- ## Class Diagram
   collapsed:: true
 	- ![image.png](../assets/SKOS-XLdiagram.png){:height 628, :width 746}
 		- #+BEGIN_NOTE
@@ -59,6 +66,7 @@ type:: [[Ontology]]
 		- skos:notation
 		- **skosxl:literalForm**
 - ## Queries
+  collapsed:: true
 	- Get all properties and classes of [[SKOS-XL]] (including [[SKOS]])
 		- ```sparql
 		  SELECT DISTINCT ?Class ?aProperty ?oProperty ?dProperty

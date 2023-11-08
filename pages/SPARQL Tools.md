@@ -42,4 +42,4 @@ collapsed:: true
   collapsed:: true
 	- [Tarql](http://tarql.github.io)
 	- [SPARQL Generate](https://ci.mines-stetienne.fr/sparql-generate/)
-	- SPARQL Anything
+	- [SPARQL Anything](https://sparql-anything.cc)

@@ -2,8 +2,8 @@
 - [[SPARQL training course]]
 - [[SPARQL Syntax]]
 - [[SPARQL Endpoints]]
-- [[SPARQL Tools]]
 - [[Exploratory queries]]
+- [[SPARQL Tools]]
 - [Ontologies]([[Ontology]])
 - [[Prefixes]]
 - [[Variables]]

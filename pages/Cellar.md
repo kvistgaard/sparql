@@ -96,5 +96,5 @@ date:: [[Feb 2nd, 2022]]
 		              } 
 		      }
 		  ```
-		  #Query #OPTIONAL #LANGMATCHES
+		  #Query #OPTIONAL #langMATCHES
 	- More examples available [here](https://docs.google.com/presentation/d/1oGZjnkFemOuiitf5xAi7VeDxK8_3rm1O/edit#slide=id.p1).

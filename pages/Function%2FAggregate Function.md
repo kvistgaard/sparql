@@ -1,0 +1,10 @@
+- SPARQL Aggregate Functions
+	- [[COUNT]]
+	- [[GROUP BY]]
+	- [[HAVING]]
+	- [[SUM]]
+	- [[MIN]]
+	- [[MAX]]
+	- [[AVG]]
+	- [[GROUP_CONCAT]]
+	- [[SAMPLE]]

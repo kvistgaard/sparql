@@ -1,9 +1,10 @@
-- All important points from the training course, collected for quick reference. See also [[Tutorial]]s.
+- All important points from the [training course](https://www.strategicstructures.com/?page_id=2444), collected for quick reference. See also [[Tutorial]]s.
 - ### SPARQL Interactions
   id:: 626e4952-02cc-4c88-8565-139a93e6a98a
   collapsed:: true
 	- ![SPARQLinteractions.svg](../assets/SPARQLinteractions_1643113721643_0.svg){:height 304, :width 746}
 	- See [[SPARQL Tools]]
+	- See [[Querying with curl]]
 - ### Two triple patterns, same subject
   id:: 626e4952-6ffd-494a-bbbf-122685d3d4f7
   collapsed:: true
@@ -76,6 +77,7 @@
 	  {?work_of_Agatha_Christie dbo:author dbr:Agatha_Christie } 
 	  ```
 	  #Query #COUNT
+	- See [[Function/Aggregate Function]]
 - ### Functions on dates and times
   collapsed:: true
   id:: 626e4952-30dc-4bce-804c-fee5318b8244
@@ -125,54 +127,49 @@
 	  `NOT EXISTS` and `MINUS` have different logic and may produce different results on the same dataset.
 	  #+END_IMPORTANT
 	- ```sparql
-	  SELECT DISTINCT ?leader 
+	  SELECT ?work 
+	  WHERE {
+	    ?work a dbo:Artwork .
+	    ?work dbo:museum dbr:Louvre .
 	  
-	  WHERE { 
-	    ?MS a dbo:Country; 
-	      dct:subject dbc:Member_states_of_the_European_Union;
-	      dbp:leaderName ?leader . 
-	    FILTER NOT EXISTS {?leader dbo:spouse ?spouse .}
+	    FILTER NOT EXISTS {?work dbo:author ?artist .}
 	  }
-	  
-	  ORDER BY DESC(?leader)
-	  
 	  ```
 	  #Query #FILTER #[[NOT EXISTS]]
 - ### Optional results
   collapsed:: true
   id:: 626e4952-6483-438f-9a57-c210fdd6988a
 	- ```sparql
-	  SELECT DISTINCT ?leader ?spouse
-	  
-	  WHERE { 
-	    ?MS a dbo:Country; 
-	      dct:subject dbc:Member_states_of_the_European_Union;
-	      dbp:leaderName ?leader . 
-	    OPTIONAL {?leader dbo:spouse ?spouse .}
+	  SELECT ?work ?artist
+	  WHERE {
+	    ?work a dbo:Artwork .
+	    ?work dbo:museum dbr:Louvre .
+	    
+	    OPTIONAL {?work dbo:author ?artist .}
 	  }
-	  
+	  ORDER BY ?artist
+	  }
 	  ```
-	  #Query #OPTIONAL
+	  #Query #OPTIONAL #[[ORDER BY]]
 - ### Combining results
   collapsed:: true
   id:: 626e4952-211a-4446-b227-873a647fe005
 	- ```sparql
-	  SELECT DISTINCT  ?Influencer ?Influenced
+	  PREFIX dbr: <http://dbpedia.org/resource/>
+	  PREFIX dbo: <http://dbpedia.org/ontology/>
 	  
-	  WHERE {
+	  SELECT ?Influenced
 	  
-	   {dbr:Ludwig_Wittgenstein dbo:influencedBy ?Influencer .}
+	  WHERE { 
+	  { ?Influenced dbo:influencedBy  dbr:Ludwig_Wittgenstein.} 
 	  
-	  UNION
+	    UNION 
 	  
-	   {dbr:Ludwig_Wittgenstein dbo:influenced ?Influenced . }
-	  }
+	  { dbr:Ludwig_Wittgenstein dbo:influenced ?Influenced .} 
+	  } 
 	  
 	  ```
 	  #Query #UNION
-	- #+BEGIN_NOTE
-	  This query will not give complete results, unless inferred triples on inverse properties are included. To guarantee complete results relying only on SPARQL, the inverse property should be included. 
-	  #+END_NOTE
 - ### Search for string patterns
   id:: 61fd3a3d-81b5-448d-a76f-d1b0008b7476
   collapsed:: true
@@ -192,7 +189,7 @@
 	  }
 	  ORDER BY ?MusicalWork
 	  ```
-	  #Query #REGEX #FILTER #LANG
+	  #Query #REGEX #FILTER #LANG #[[ORDER BY]]
 - ### Assembling strings
   collapsed:: true
   id:: 626e4952-d6a2-41d0-9766-10286789ae0c
@@ -210,6 +207,7 @@
 	  ```
 	  #Query #IRI #CONCAT #Cellar
 - ### Property paths
+  collapsed:: true
   id:: 626e4952-c45c-4911-bda6-6c93293dbe9e
 	- [[Syntax]]
 		- ```sparql
@@ -268,9 +266,8 @@
   collapsed:: true
   id:: 626e4952-9418-419f-918a-47f28f524f66
 	- The current best practice for language tags is defined in [RFC5646](https://www.rfc-editor.org/rfc/rfc5646.txt).
-	- [[LANGMATCHES]]
-	  collapsed:: true
-		- `FILTER (LANG(?label) = "fr")` will only return results where the language tag of `?label` is `@fr`, while `FILTER LANGMATCHES( LANG(?label), "fr" )` will also include those with regions such as `@fr-BE`.
+	- [[langMATCHES]]
+		- `FILTER (LANG(?label) = "fr")` will only return results where the language tag of `?label` is `@fr`, while `FILTER langMATCHES( LANG(?label), "fr" )` will also include those with regions such as `@fr-BE`.
 - ### Wikibase data model
   collapsed:: true
   id:: 626e4952-c934-4fa9-a7e1-eb3803156299
@@ -302,6 +299,7 @@
 		- <iframe src="https://w.wiki/5BLU" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe> #| #^ #Wikidata #Query
 - ### Properties for statements (Wikidata)
   id:: 600748be-0c7a-4b4c-807d-a5c41f8ee80e
+  collapsed:: true
 	- Item - Statement - Value - Qualifier Value
 		- ![WikidataStatementPropertiesGeneric.svg](../assets/WikidataStatementPropertiesGeneric_1644054801681_0.svg) #Wikidata
 	- [[Example]]: US Presidents
@@ -328,6 +326,7 @@
 		- <iframe src="https://w.wiki/4yao" style="width:100%;max-width:100%;height:450px" frameborder="0"></iframe>
 - ### Grouping results with GROUP_CONCAT
   id:: 626e4952-ad6c-4838-bab3-c76ce434120a
+  collapsed:: true
 	- ```sparql
 	  (GROUP_CONCAT (?V; SEPARATOR = ", ") AS ?groupV)
 	  
@@ -375,7 +374,7 @@
 				- From RDF to RDF
 					- Applying different ontologies
 					- Generating URIs
-				- From CSV to RDF (e.g. using [Tarql](http://tarql.github.io))
+					- From non-RDF to RDF (see ((654767de-a5ef-494d-8abe-66216362dd61)))
 		- Result
 			- Triples (virtual graph)
 		- [[Example]]

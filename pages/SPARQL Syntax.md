@@ -16,7 +16,16 @@
 	  |ORDER BY   | Sort the results by                              | **ORDER BY** ?population                              |
 	  | DESC()     | Sort in descending order                         | ORDER BY **DESC(**?population**)**      |              
 	  | LIMIT      | Limits the number of results                     | **LIMIT** 20                                          |
+- ## Variables
+  collapsed:: true
+	- A query variable is marked by the use of either "?" or "$".
+	- The"?" or "$" is not part of the variable name.
+	- In a query, $x and ?x identify the same variable.
+	- All queries in this wiki use only "?".
+	- Allowed characters are [a-z], [A-Z], [0-9], _, · and diacritics. Hyphens are not allowed.
+	- When using several words, it is recommended to put them either in CamelCase (example: NumberOfItems) or use underscore (Number_Of_Items).
 - ## Brackets
+  collapsed:: true
 	- Curly **{ }** (aka “braces”)
 		- Query conditions: triple patterns, filters, bindings, etc
 		  `{?x a foaf:Person}`

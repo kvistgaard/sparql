@@ -1,17 +1,21 @@
 public:: false
 
-- TODO Get SPARQL endpoints by query
+- DONE Get SPARQL endpoints by query
   :LOGBOOK:
   CLOCK: [2022-03-09 Wed 07:42:28]--[2022-03-09 Wed 07:42:30] =>  00:00:02
+  CLOCK: [2023-11-20 Mon 10:47:44]--[2023-11-20 Mon 10:47:45] =>  00:00:01
   :END:
-- TODO Add to [[SPARQL training course]], more on property paths etc (take from PDFs, it's lots in PPT)
+- DONE Add to [[SPARQL training course]], more on property paths etc (take from PDFs, it's lots in PPT)
 - TODO Test very big export
 - TODO Hide unlinked refs
   :LOGBOOK:
   CLOCK: [2022-03-22 Tue 13:59:45]--[2022-03-22 Tue 13:59:47] =>  00:00:02
   :END:
 - TODO Fix block ref CSS in Bonofix
-- TODO Start adding SPARQL tools like SPARQL Generate Traql and SPARQL anything
+- DOING Start adding SPARQL tools like SPARQL Generate Traql and SPARQL anything
+  :LOGBOOK:
+  CLOCK: [2023-11-20 Mon 10:48:57]
+  :END:
 	- separate pages with metadata
 	- stanartise with endpoints
 	- then create a query page, and that page should go to the content.
@@ -20,12 +24,9 @@ public:: false
   :LOGBOOK:
   CLOCK: [2022-03-09 Wed 08:29:48]
   :END:
-- TODO All pages, first those included in Conent, should have description
+- TODO All pages in the home page should have description
   collapsed:: true
 	- ![image.png](../assets/image_1647510415720_0.png)
-- TODO Fix issues with ((5601edec-7d0a-4be1-b12c-8357da7b0b94)) images
-  collapsed:: true
-	- open on the sidebar
 - DONE Consider showing 'All Pages'
 - TODO Show property hierarchy for
   collapsed:: true

@@ -4,7 +4,5 @@
 - [[SPARQL Endpoints]]
 - [[Exploratory queries]]
 - [[SPARQL Tools]]
-- [Ontologies]([[Ontology]])
 - [[Prefixes]]
-- [[Variables]]
 - [Tutorials]([[Tutorial]])

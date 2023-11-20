@@ -39,6 +39,7 @@ collapsed:: true
 	- [Wikidata Query Builder](https://query.wikidata.org/querybuilder/?uselang=en)
 	- [Visual SPARQL Builder](https://leipert.github.io/vsb/#home)
 - ## Graph Generators
+  id:: 654767de-a5ef-494d-8abe-66216362dd61
   collapsed:: true
 	- [Tarql](http://tarql.github.io)
 	- [SPARQL Generate](https://ci.mines-stetienne.fr/sparql-generate/)

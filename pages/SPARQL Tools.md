@@ -46,4 +46,5 @@ collapsed:: true
 	- [SPARQL Anything](https://sparql-anything.cc)
 	- [Ontop VKG](https://ontop-vkg.org)
 - ## Validators
+  collapsed:: true
 	- [SPARQLer Query Validator](https://sparql.org/query-validator.html) - validation and optimization (SPARQL algebra)

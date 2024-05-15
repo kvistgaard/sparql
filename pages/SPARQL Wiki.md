@@ -12,7 +12,7 @@
 - [Tutorials]([[Tutorial]])
 -
 - Created by [[Ivo Velitchkov]].
-- Last update: Nov 20th, 2023
+- Last update: May 15, 2024
 - If you want to report an error or suggest an improvement, please create an [issue on GitHub](https://github.com/kvistgaard/sparql/issues/new).
 -
 - Related wikis on semantic technologies: [SHACL Wiki](https://kvistgaard.github.io/shacl/)

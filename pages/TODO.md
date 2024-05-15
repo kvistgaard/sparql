@@ -6,19 +6,6 @@ public:: false
   CLOCK: [2023-11-20 Mon 10:47:44]--[2023-11-20 Mon 10:47:45] =>  00:00:01
   :END:
 - DONE Add to [[SPARQL training course]], more on property paths etc (take from PDFs, it's lots in PPT)
-- TODO Test very big export
-- TODO Hide unlinked refs
-  :LOGBOOK:
-  CLOCK: [2022-03-22 Tue 13:59:45]--[2022-03-22 Tue 13:59:47] =>  00:00:02
-  :END:
-- TODO Fix block ref CSS in Bonofix
-- DOING Start adding SPARQL tools like SPARQL Generate Traql and SPARQL anything
-  :LOGBOOK:
-  CLOCK: [2023-11-20 Mon 10:48:57]
-  :END:
-	- separate pages with metadata
-	- stanartise with endpoints
-	- then create a query page, and that page should go to the content.
 - DONE Replace the favicon
 - DOING Add shortcuts to How to use this graph (ore separate page)
   :LOGBOOK:
@@ -29,7 +16,6 @@ public:: false
 	- ![image.png](../assets/image_1647510415720_0.png)
 - DONE Consider showing 'All Pages'
 - TODO Show property hierarchy for
-  collapsed:: true
 	- DONE SKOS-XL
 	- TODO CDM
 - ---

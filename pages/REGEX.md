@@ -12,5 +12,5 @@ type:: [[Function/On strings]]
 		- `REGEX (?s, "[0-9]")`, or
 		- `REGEX (?s, "\\d")`
 		- #+BEGIN_IMPORTANT
-		  Since the patter is in a quoted string, the `\` needs itself escaping, hence all character escaping need `\\`
+		  Since the pattern is in a quoted string, the `\` needs itself escaping, hence all character escaping need `\\`
 		  #+END_IMPORTANT

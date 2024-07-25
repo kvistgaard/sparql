@@ -35,6 +35,7 @@ collapsed:: true
 	-
 - ## Query Builders
   collapsed:: true
+	- [Sparklis](https://github.com/sebferre/sparklis)
 	- [Sparnatural](https://github.com/sparna-git/Sparnatural)
 	- [Visual SPARQL Builder](https://leipert.github.io/vsb/#home)
 	- [Wikidata Query Builder](https://query.wikidata.org/querybuilder/?uselang=en)
